@@ -1,0 +1,57 @@
+{
+  "clinica": "Consultório Dra. Mariana",
+  "ultimaAtualizacao": "2026-06-11T07:00:00-03:00",
+
+  "ganhos": [
+    { "v": "2026-04-08", "c": "2026-04-01", "val": 450, "orig": "Instagram", "resp": "Consultório Aurora" },
+    { "v": "2026-04-15", "c": "2026-04-03", "val": 450, "orig": "Indicação", "resp": "Consultório Aurora" },
+    { "v": "2026-04-22", "c": "2026-04-10", "val": 500, "orig": "Google", "resp": "Consultório Aurora" },
+    { "v": "2026-05-05", "c": "2026-04-28", "val": 450, "orig": "Instagram", "resp": "Consultório Aurora" },
+    { "v": "2026-05-12", "c": "2026-05-02", "val": 450, "orig": "Instagram", "resp": "Consultório Aurora" },
+    { "v": "2026-05-19", "c": "2026-05-08", "val": 500, "orig": "Indicação", "resp": "Consultório Aurora" },
+    { "v": "2026-05-26", "c": "2026-05-15", "val": 450, "orig": "Google", "resp": "Consultório Aurora" },
+    { "v": "2026-06-03", "c": "2026-05-25", "val": 450, "orig": "Instagram", "resp": "Consultório Aurora" },
+    { "v": "2026-06-09", "c": "2026-06-01", "val": 500, "orig": "Indicação", "resp": "Consultório Aurora" }
+  ],
+
+  "marcadas": [
+    { "v": "2026-06-02", "val": 450, "orig": "Instagram", "nome": "Paciente A" },
+    { "v": "2026-06-04", "val": 450, "orig": "Google", "nome": "Paciente B" },
+    { "v": "2026-06-05", "val": 500, "orig": "Indicação", "nome": "Paciente C" },
+    { "v": "2026-06-08", "val": 450, "orig": "Instagram", "nome": "Paciente D" },
+    { "v": "2026-06-10", "val": 450, "orig": "Instagram", "nome": "Paciente E" }
+  ],
+
+  "contagemMarcadas": {
+    "totalAtual": 33,
+    "dataAtual": "11/06/2026",
+    "variacao": -37,
+    "dataAnterior": "01/06/2026"
+  },
+
+  "leadsMes": {
+    "2026-04": 95,
+    "2026-05": 120,
+    "2026-06": 48
+  },
+
+  "perdidosMes": {
+    "2026-04": 30,
+    "2026-05": 42,
+    "2026-06": 15
+  },
+
+  "perdidosOrg": {
+    "2026-04": { "Instagram": 14, "Google": 9, "Indicação": 7 },
+    "2026-05": { "Instagram": 20, "Google": 13, "Indicação": 9 },
+    "2026-06": { "Instagram": 7, "Google": 5, "Indicação": 3 }
+  },
+
+  "perdidosMotivo": {
+    "Sem resposta": 38,
+    "Preço": 21,
+    "Desistiu": 15,
+    "Outro profissional": 8,
+    "Outros": 5
+  }
+}
