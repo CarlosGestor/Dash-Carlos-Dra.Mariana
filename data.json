@@ -1,6 +1,6 @@
 {
   "clinica": "Consultório Dra. Mariana",
-  "ultimaAtualizacao": "2026-06-12T03:36:41.377Z",
+  "ultimaAtualizacao": "2026-06-12T03:43:02.090Z",
   "ganhos": [
     {
       "resp": "Consultório Aurora",
@@ -584,7 +584,206 @@
       "c": "2026-03-23"
     }
   ],
-  "marcadas": [],
+  "marcadas": [
+    {
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Cynara"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Sylvia"
+    },
+    {
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Karolyne"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Bruna Sales"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Franciele Souza"
+    },
+    {
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Paula Andraous Merhi"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Patrícia"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Kelly Sampaio"
+    },
+    {
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Kacimayra Parente"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Polly"
+    },
+    {
+      "orig": "Indicação",
+      "val": 840,
+      "v": "2026-06-11",
+      "nome": "Letícia Chaves Cruz"
+    },
+    {
+      "orig": "Paciente",
+      "val": 100,
+      "v": "2026-06-11",
+      "nome": "Camila Reis"
+    },
+    {
+      "orig": "Instagram",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Beatriz Costa"
+    },
+    {
+      "orig": "Instagram",
+      "val": 830,
+      "v": "2026-06-11",
+      "nome": "Gilliene Gonçalves"
+    },
+    {
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Sophia Lôbo"
+    },
+    {
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Kálita Mirian Souza Da Silva Lourenço"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Lorena Camargo"
+    },
+    {
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Letícia Dias"
+    },
+    {
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Mayara"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Lorena França"
+    },
+    {
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Carolina pyles"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Hanna Carolina Soares Chaves"
+    },
+    {
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Lorena Viana"
+    },
+    {
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Lhuanna"
+    },
+    {
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Andressa"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Natália Cristina Queiroz"
+    },
+    {
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Janaina Mendes"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Ana Francisca Da Costa Furtado"
+    },
+    {
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Nathália Domitilia"
+    },
+    {
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Laryssa"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Carla Luiza Costa Lima"
+    },
+    {
+      "orig": "Sem Dados",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Ana Paula R. Cintra"
+    },
+    {
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-11",
+      "nome": "Lourdes"
+    }
+  ],
   "contagemMarcadas": {
     "totalAtual": 33,
     "dataAtual": "11/06/2026",
