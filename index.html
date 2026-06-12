@@ -309,9 +309,12 @@ function getDashboardHTML() {
       <div class="cc"><div class="cch"><div><div class="cct">Faturamento ao Longo do Tempo</div><div class="ccs">Receita mensal (R$)</div></div></div><div class="cw h220"><canvas id="c-rt"></canvas></div></div>
       <div class="cc"><div class="cch"><div><div class="cct">Faturamento por Origem</div><div class="ccs">Receita total por canal</div></div></div><div class="cw h220"><canvas id="c-ro"></canvas></div></div>
     </div>
+    <div class="row c1">
+      <div class="cc"><div class="cch"><div><div class="cct">Faturamento por Procedimento</div><div class="ccs">Receita por tipo de consulta (nº de consultas no tooltip)</div></div></div><div class="cw h220"><canvas id="c-fp"></canvas></div></div>
+    </div>
     <div class="row c2">
-      <div class="cc"><div class="cch"><div><div class="cct">Ticket Médio por Mês</div><div class="ccs">Valor médio × volume de vendas</div></div></div><div class="cw h200"><canvas id="c-tk"></canvas></div></div>
       <div class="cc"><div class="cch"><div><div class="cct">Vendas por Origem</div><div class="ccs">Consultas realizadas por canal</div></div></div><div class="cw h200"><canvas id="c-so"></canvas></div></div>
+      <div class="cc"><div class="cch"><div><div class="cct">Distribuição de Procedimentos</div><div class="ccs">Nº de consultas por tipo</div></div></div><div class="cw h200"><canvas id="c-pq"></canvas></div></div>
     </div>
     <div class="row c1">
       <div class="cc"><div class="cch"><div><div class="cct">Performance por Responsável</div><div class="ccs">Faturamento, vendas, ticket médio e tempo de decisão</div></div></div>
@@ -320,9 +323,6 @@ function getDashboardHTML() {
           <th>Ticket Médio</th><th>Tempo Médio</th><th>% do Total</th>
         </tr></thead><tbody id="t-u"></tbody></table></div>
       </div>
-    </div>
-    <div class="row c1">
-      <div class="cc"><div class="cch"><div><div class="cct">Faturamento por Procedimento</div><div class="ccs">Receita por tipo de consulta (nº de consultas no tooltip)</div></div></div><div class="cw h220"><canvas id="c-fp"></canvas></div></div>
     </div>
   </div>
 
@@ -517,14 +517,6 @@ function doFin(g,ms){
   mk('c-ro','bar',{labels:oe.map(e=>e[0]),datasets:[{label:'Faturamento',data:oe.map(e=>e[1]),backgroundColor:CC.map(c=>c+'bb'),borderColor:CC,borderWidth:1.5,borderRadius:6}]},
     {...bO,indexAxis:'y',scales:{x:{...bO.scales.x,ticks:{...bO.scales.x.ticks,callback:v=>'R$'+Math.round(v/1000)+'k'}},y:{grid:{display:false},ticks:{color:'#6b7a99',font:{size:11,family:'DM Sans'}}}},plugins:{...bO.plugins,tooltip:{...bO.plugins.tooltip,callbacks:{label:ctx=>' R$ '+Math.round(ctx.parsed.x).toLocaleString('pt-BR')}}}});
 
-  // Ticket médio
-  const tByM={};
-  g.forEach(r=>{if(!tByM[mon(r.v)])tByM[mon(r.v)]={s:0,c:0};tByM[mon(r.v)].s+=r.val;tByM[mon(r.v)].c++;});
-  mk('c-tk','line',{labels:ms.map(mlbl),datasets:[
-    {label:'Ticket Médio',data:ms.map(m=>tByM[m]?.c>0?Math.round(tByM[m].s/tByM[m].c):0),borderColor:'#d97706',backgroundColor:'rgba(217,119,6,.06)',fill:true,tension:0.4,pointBackgroundColor:'#d97706',pointBorderColor:'#fff',pointBorderWidth:2,pointRadius:4,yAxisID:'y'},
-    {label:'Nº Ganhos',data:ms.map(m=>tByM[m]?.c||0),borderColor:'#7c3aed',borderDash:[5,4],fill:false,tension:0.4,pointBackgroundColor:'#7c3aed',pointBorderColor:'#fff',pointBorderWidth:2,pointRadius:4,yAxisID:'y1'},
-  ]},{...bO,plugins:{...bO.plugins,legend:legO},scales:{x:{...bO.scales.x},y:{...bO.scales.y,ticks:{...bO.scales.y.ticks,callback:v=>'R$'+v.toLocaleString('pt-BR')},position:'left'},y1:{grid:{display:false},ticks:{color:'#7c3aed',font:{size:11,family:'DM Sans'}},position:'right'}}});
-
   // Vendas por origem — ROSCA
   const sbO={};
   g.forEach(r=>{sbO[r.orig]=(sbO[r.orig]||0)+1;});
@@ -547,6 +539,11 @@ function doFin(g,ms){
          callbacks:{label:(ctx)=>{const proc=ctx.label;const fat=ctx.parsed.x;const qtd=procQtd[proc]||0;return [`Faturamento: ${fmtR(fat)}`,`Consultas: ${qtd}`];}}}},
      scales:{x:{grid:{color:'#f0f2f7'},ticks:{color:'#6b7a99',font:{size:11,family:'DM Sans'},callback:v=>'R$'+(v/1000).toFixed(1)+'k'}},
              y:{grid:{display:false},ticks:{color:'#6b7a99',font:{size:11,family:'DM Sans'}}}}});
+
+  // Distribuição de procedimentos — ROSCA (quantidade)
+  const pq=Object.entries(procQtd).sort((a,b)=>b[1]-a[1]);
+  mk('c-pq','doughnut',{labels:pq.map(e=>e[0]),datasets:[{data:pq.map(e=>e[1]),backgroundColor:CC.map(c=>c+'cc'),borderColor:CC,borderWidth:2,hoverOffset:8}]},
+    {responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'right',labels:{color:'#6b7a99',font:{size:11,family:'DM Sans'},padding:12,boxWidth:10,boxHeight:10}},tooltip:{backgroundColor:'#fff',borderColor:'#e8ecf2',borderWidth:1,titleColor:'#1a2035',bodyColor:'#6b7a99',padding:12,cornerRadius:8,callbacks:{label:(ctx)=>` ${ctx.label}: ${ctx.parsed} consultas`}}}});
 
   const byU={};
   g.forEach(r=>{if(!byU[r.resp])byU[r.resp]={v:0,s:0,d:[]};byU[r.resp].v+=r.val;byU[r.resp].s++;const d=daysBetween(r.c,r.v);if(d>=0)byU[r.resp].d.push(d);});
