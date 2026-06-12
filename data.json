@@ -1,57 +1,643 @@
 {
   "clinica": "Consultório Dra. Mariana",
-  "ultimaAtualizacao": "2026-06-11T07:00:00-03:00",
-
+  "ultimaAtualizacao": "2026-06-12T01:23:14.932Z",
   "ganhos": [
-    { "v": "2026-04-08", "c": "2026-04-01", "val": 450, "orig": "Instagram", "resp": "Consultório Aurora" },
-    { "v": "2026-04-15", "c": "2026-04-03", "val": 450, "orig": "Indicação", "resp": "Consultório Aurora" },
-    { "v": "2026-04-22", "c": "2026-04-10", "val": 500, "orig": "Google", "resp": "Consultório Aurora" },
-    { "v": "2026-05-05", "c": "2026-04-28", "val": 450, "orig": "Instagram", "resp": "Consultório Aurora" },
-    { "v": "2026-05-12", "c": "2026-05-02", "val": 450, "orig": "Instagram", "resp": "Consultório Aurora" },
-    { "v": "2026-05-19", "c": "2026-05-08", "val": 500, "orig": "Indicação", "resp": "Consultório Aurora" },
-    { "v": "2026-05-26", "c": "2026-05-15", "val": 450, "orig": "Google", "resp": "Consultório Aurora" },
-    { "v": "2026-06-03", "c": "2026-05-25", "val": 450, "orig": "Instagram", "resp": "Consultório Aurora" },
-    { "v": "2026-06-09", "c": "2026-06-01", "val": 500, "orig": "Indicação", "resp": "Consultório Aurora" }
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 100,
+      "v": "2026-03-30",
+      "c": "2026-02-20"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-03-26",
+      "c": "2026-02-24"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-03-31",
+      "c": "2026-03-02"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-03-31",
+      "c": "2026-03-30"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 2500,
+      "v": "2026-04-01",
+      "c": "2026-03-26"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-07",
+      "c": "2026-03-09"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-07",
+      "c": "2026-03-09"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-07",
+      "c": "2026-03-17"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-07",
+      "c": "2026-03-05"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-07",
+      "c": "2026-03-14"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-07",
+      "c": "2026-02-25"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-04-09",
+      "c": "2026-04-09"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-16",
+      "c": "2026-02-20"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-16",
+      "c": "2026-04-13"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-16",
+      "c": "2026-02-23"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-16",
+      "c": "2026-02-20"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-04-17",
+      "c": "2026-03-22"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-04-17",
+      "c": "2026-03-27"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-28",
+      "c": "2026-03-05"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-07",
+      "c": "2026-02-19"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-06",
+      "c": "2026-03-17"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-04-24",
+      "c": "2026-03-23"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-14",
+      "c": "2026-03-10"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 350,
+      "v": "2026-04-10",
+      "c": "2026-03-09"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-13",
+      "c": "2026-02-25"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-04-10",
+      "c": "2026-03-06"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-04-22",
+      "c": "2026-03-20"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-17",
+      "c": "2026-03-11"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-04-22",
+      "c": "2026-03-02"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 0,
+      "v": "2026-04-07",
+      "c": "2026-03-03"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-04-07",
+      "c": "2026-03-09"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 300,
+      "v": "2026-04-08",
+      "c": "2026-04-06"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-05-05",
+      "c": "2026-02-23"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-05",
+      "c": "2026-03-23"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-05-12",
+      "c": "2026-04-22"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-12",
+      "c": "2026-04-06"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-05-12",
+      "c": "2026-05-04"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-05-12",
+      "c": "2026-04-06"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 600,
+      "v": "2026-05-12",
+      "c": "2026-05-11"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-05-12",
+      "c": "2026-03-09"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-05-12",
+      "c": "2026-05-12"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-05-20",
+      "c": "2026-04-06"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-22",
+      "c": "2026-05-19"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-05-27",
+      "c": "2026-03-12"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-29",
+      "c": "2026-05-28"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-05-29",
+      "c": "2026-03-20"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-05-29",
+      "c": "2026-04-22"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-05-29",
+      "c": "2026-04-03"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-05-15",
+      "c": "2026-04-14"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 500,
+      "v": "2026-05-12",
+      "c": "2026-04-06"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 700,
+      "v": "2026-05-15",
+      "c": "2026-03-27"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-05-08",
+      "c": "2026-03-30"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-05-15",
+      "c": "2026-04-13"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-19",
+      "c": "2026-04-23"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-12",
+      "c": "2026-03-18"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-05-13",
+      "c": "2026-03-26"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 700,
+      "v": "2026-05-15",
+      "c": "2026-02-27"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-04",
+      "c": "2026-03-03"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-05-22",
+      "c": "2026-03-19"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-05-18",
+      "c": "2026-03-13"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-05-19",
+      "c": "2026-03-20"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-18",
+      "c": "2026-05-12"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-18",
+      "c": "2026-04-28"
+    },
+    {
+      "resp": "Outro",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-05-04",
+      "c": "2026-03-26"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-01",
+      "c": "2026-05-05"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 550,
+      "v": "2026-06-01",
+      "c": "2026-05-04"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-02",
+      "c": "2026-05-08"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-02",
+      "c": "2026-04-22"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-08",
+      "c": "2026-05-29"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-08",
+      "c": "2026-05-28"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-08",
+      "c": "2026-05-06"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-10",
+      "c": "2026-06-09"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-06-09",
+      "c": "2026-05-13"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-09",
+      "c": "2026-05-14"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-09",
+      "c": "2026-04-23"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-08",
+      "c": "2026-03-23"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-11",
+      "c": "2026-05-08"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-11",
+      "c": "2026-05-10"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 815,
+      "v": "2026-06-11",
+      "c": "2026-04-09"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-06-11",
+      "c": "2026-04-20"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "c": "2026-04-06"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "c": "2026-04-10"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 650,
+      "v": "2026-06-11",
+      "c": "2026-03-23"
+    }
   ],
-
-  "marcadas": [
-    { "v": "2026-06-02", "val": 450, "orig": "Instagram", "nome": "Paciente A" },
-    { "v": "2026-06-04", "val": 450, "orig": "Google", "nome": "Paciente B" },
-    { "v": "2026-06-05", "val": 500, "orig": "Indicação", "nome": "Paciente C" },
-    { "v": "2026-06-08", "val": 450, "orig": "Instagram", "nome": "Paciente D" },
-    { "v": "2026-06-10", "val": 450, "orig": "Instagram", "nome": "Paciente E" }
-  ],
-
+  "marcadas": [],
   "contagemMarcadas": {
     "totalAtual": 33,
     "dataAtual": "11/06/2026",
-    "variacao": -37,
-    "dataAnterior": "01/06/2026"
+    "totalAnterior": null,
+    "dataAnterior": null,
+    "variacao": null,
+    "historico": [
+      {
+        "total": 33,
+        "data": "11/06/2026"
+      }
+    ]
   },
-
   "leadsMes": {
-    "2026-04": 95,
-    "2026-05": 120,
-    "2026-06": 48
+    "2026-04": 227,
+    "2026-05": 214,
+    "2026-06": 64
   },
-
   "perdidosMes": {
-    "2026-04": 30,
-    "2026-05": 42,
-    "2026-06": 15
+    "2026-03": 21,
+    "2026-04": 147,
+    "2026-05": 147,
+    "2026-06": 54
   },
-
   "perdidosOrg": {
-    "2026-04": { "Instagram": 14, "Google": 9, "Indicação": 7 },
-    "2026-05": { "Instagram": 20, "Google": 13, "Indicação": 9 },
-    "2026-06": { "Instagram": 7, "Google": 5, "Indicação": 3 }
+    "2026-03": {
+      "Sem Dados": 20,
+      "Instagram": 1
+    },
+    "2026-04": {
+      "Indicação": 17,
+      "Sem Dados": 85,
+      "Outros": 1,
+      "Instagram": 36,
+      "Paciente": 8
+    },
+    "2026-05": {
+      "Sem Dados": 43,
+      "Indicação": 44,
+      "Instagram": 47,
+      "Paciente": 13
+    },
+    "2026-06": {
+      "Instagram": 24,
+      "Indicação": 21,
+      "Paciente": 8,
+      "Sem Dados": 1
+    }
   },
-
   "perdidosMotivo": {
-    "Sem resposta": 38,
-    "Preço": 21,
-    "Desistiu": 15,
-    "Outro profissional": 8,
-    "Outros": 5
+    "Spam": 46,
+    "Questões de preço": 8,
+    "Sem resposta": 299,
+    "Mudança de ideia": 16
   }
 }
