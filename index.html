@@ -111,7 +111,54 @@ tbody tr:hover td{background:#fafbfd}
 .mini-pct{font-size:.68rem;color:var(--muted);min-width:36px}
 
 @media(max-width:1100px){.kg{grid-template-columns:repeat(2,1fr)}.c2,.c3{grid-template-columns:1fr}}
-@media(max-width:600px){.main,.hdr,.fbar{padding-left:14px;padding-right:14px}.kg{grid-template-columns:1fr 1fr}.kval{font-size:1.2rem}}
+
+/* ── MOBILE (celular) ── */
+@media(max-width:680px){
+  /* Header deixa de ter altura fixa e empilha sem sobrepor */
+  .hdr{height:auto;min-height:52px;padding:8px 14px;flex-wrap:wrap;gap:6px;row-gap:4px;align-items:center}
+  .hdr-left{gap:10px;flex:1;min-width:0}
+  .logo-wrap{padding-right:10px;gap:6px}
+  .logo-icon{width:26px;height:26px}
+  .logo-name{font-size:.72rem}
+  .hdr-left>div:last-child{min-width:0;flex:1}
+  .hdr h1{font-size:.82rem;line-height:1.15;white-space:normal;overflow:hidden;text-overflow:ellipsis}
+  .hdr-sub{font-size:.62rem;line-height:1.25;margin-top:2px;white-space:normal}
+  .hdr-right{margin-left:auto}
+  .badge-upd{font-size:.6rem;padding:2px 7px}
+
+  /* Barra de filtros: empilha em blocos, tabs vão pra baixo em largura total */
+  .fbar{padding:8px 14px;gap:8px;row-gap:8px}
+  .flbl{font-size:.62rem}
+  .pill{padding:4px 12px;font-size:.72rem}
+  #pills{gap:6px!important}
+  .sep{display:none}
+  .fi{height:32px;font-size:.78rem}
+  .tab-group{margin-left:0;width:100%;justify-content:space-between}
+  .tab-btn{flex:1;justify-content:center;padding:8px 6px;font-size:.72rem}
+
+  /* KPIs e gráficos em coluna única */
+  .main{padding:14px}
+  .kg{grid-template-columns:1fr 1fr;gap:10px}
+  .kc{padding:13px 14px}
+  .kval{font-size:1.15rem}
+  .klbl{font-size:.62rem}
+  .ksub{font-size:.58rem}
+  .kico{width:30px;height:30px;font-size:14px}
+  /* gráficos um por linha + um pouco mais altos pra não ficarem achatados */
+  .c2,.c3{grid-template-columns:1fr!important}
+  /* impede que a tabela larga estoure a página: scroll fica DENTRO do card */
+  .cc{min-width:0;max-width:100%;overflow:hidden}
+  .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  .tw table{min-width:520px}
+  .cg,.c1,.c2,.c3,.row{min-width:0}
+}
+
+/* ── TELAS BEM ESTREITAS (≤380px) ── */
+@media(max-width:380px){
+  .kg{grid-template-columns:1fr}
+  .kval{font-size:1.3rem}
+  .logo-name{display:none}
+}
 </style>
 </head>
 <body>
