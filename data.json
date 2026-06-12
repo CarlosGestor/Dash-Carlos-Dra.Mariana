@@ -1,6 +1,6 @@
 {
   "clinica": "Consultório Dra. Mariana",
-  "ultimaAtualizacao": "2026-06-12T04:13:10.240Z",
+  "ultimaAtualizacao": "2026-06-12T04:24:05.697Z",
   "ganhos": [
     {
       "resp": "Consultório Aurora",
@@ -444,7 +444,7 @@
       "c": "2026-04-28"
     },
     {
-      "resp": "Outro",
+      "resp": "Consultório Aurora",
       "orig": "Paciente",
       "val": 650,
       "v": "2026-05-04",
