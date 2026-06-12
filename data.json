@@ -1,6 +1,6 @@
 {
   "clinica": "Consultório Dra. Mariana",
-  "ultimaAtualizacao": "2026-06-12T01:23:14.932Z",
+  "ultimaAtualizacao": "2026-06-12T01:29:38.689Z",
   "ganhos": [
     {
       "resp": "Consultório Aurora",
@@ -584,7 +584,20 @@
       "c": "2026-03-23"
     }
   ],
-  "marcadas": [],
+  "marcadas": [
+    {
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Cynara"
+    },
+    {
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-11",
+      "nome": "Sylvia"
+    }
+  ],
   "contagemMarcadas": {
     "totalAtual": 33,
     "dataAtual": "11/06/2026",
