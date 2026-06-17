@@ -1,6 +1,6 @@
 {
   "clinica": "Consultório Dra. Mariana",
-  "ultimaAtualizacao": "2026-06-12T13:50:50.167Z",
+  "ultimaAtualizacao": "2026-06-17T12:00:56.462Z",
   "ganhos": [
     {
       "resp": "Consultório Aurora",
@@ -665,6 +665,246 @@
       "v": "2026-06-11",
       "c": "2026-03-23",
       "proc": "Ginecologia/Rotina anual"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 650,
+      "v": "2026-06-12",
+      "c": "2026-03-26",
+      "proc": "Tratamento para engravidar"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-06-12",
+      "c": "2026-06-11",
+      "proc": "Tratamento para engravidar"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-12",
+      "c": "2026-05-05",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-06-13",
+      "c": "2026-04-22",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-13",
+      "c": "2026-04-22",
+      "proc": "Ginecologia/Rotina anual"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-13",
+      "c": "2026-04-13",
+      "proc": "Ginecologia/Rotina anual"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-13",
+      "c": "2026-04-09",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-06-13",
+      "c": "2026-03-13",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 800,
+      "v": "2026-06-13",
+      "c": "2026-03-09",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 650,
+      "v": "2026-06-13",
+      "c": "2026-03-06",
+      "proc": "Ginecologia/Rotina anual"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 450,
+      "v": "2026-06-13",
+      "c": "2026-03-05",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-05-04",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-06-16",
+      "c": "2026-06-01",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-05-29",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Instagram",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-05-12",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-05-06",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-05-04",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 840,
+      "v": "2026-06-16",
+      "c": "2026-04-29",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Instagram",
+      "val": 800,
+      "v": "2026-06-16",
+      "c": "2026-04-29",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 350,
+      "v": "2026-06-16",
+      "c": "2026-05-18",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-03-27",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-16",
+      "c": "2026-05-13",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 800,
+      "v": "2026-06-16",
+      "c": "2026-03-06",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-03-06",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 830,
+      "v": "2026-06-16",
+      "c": "2026-03-06",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-03-06",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-03-04",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-03-03",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-03-03",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 650,
+      "v": "2026-06-16",
+      "c": "2026-02-27",
+      "proc": "Contracepção"
     }
   ],
   "marcadas": [
@@ -887,13 +1127,13 @@
   "leadsMes": {
     "2026-04": 227,
     "2026-05": 214,
-    "2026-06": 67
+    "2026-06": 98
   },
   "perdidosMes": {
     "2026-03": 21,
     "2026-04": 147,
     "2026-05": 147,
-    "2026-06": 54
+    "2026-06": 363
   },
   "perdidosOrg": {
     "2026-03": {
@@ -914,16 +1154,18 @@
       "Paciente": 13
     },
     "2026-06": {
-      "Instagram": 24,
-      "Indicação": 21,
-      "Paciente": 8,
-      "Sem Dados": 1
+      "Instagram": 88,
+      "Indicação": 67,
+      "Paciente": 17,
+      "Sem Dados": 191
     }
   },
   "perdidosMotivo": {
-    "Spam": 46,
-    "Questões de preço": 8,
-    "Sem resposta": 299,
-    "Mudança de ideia": 16
+    "Spam": 74,
+    "Questões de preço": 15,
+    "Sem resposta": 534,
+    "Mudança de ideia": 25,
+    "Não atende plano de saúde": 27,
+    "Não faz parto normal": 3
   }
 }
