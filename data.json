@@ -1,7 +1,7 @@
 {
   "clinica": "Dra. Mariana — Six Fértile",
+  "subtitulo": "Consultório Aurora",
   "ultimaAtualizacao": "2026-06-17",
-  "notas": "Junho parcial (consultas até 16/06). Procedimentos (Meire) sem dados de junho. Leads novos sem dados de março.",
   "meses": [
     "2026-03",
     "2026-04",
@@ -48,7 +48,6 @@
   },
   "perdidosBase": "criacao",
   "perdidosMes": {
-    "2026-02": 66,
     "2026-03": 236,
     "2026-04": 196,
     "2026-05": 160,
@@ -67,6 +66,45 @@
     "Mudança de ideia": 25,
     "Questões de preço": 15,
     "Não faz parto normal": 3
+  },
+  "perdidosMotivoMes": {
+    "2026-02": {
+      "Sem resposta": 51,
+      "Spam": 11,
+      "Não atende plano": 2,
+      "Mudança de ideia": 2
+    },
+    "2026-03": {
+      "Sem resposta": 192,
+      "Spam": 30,
+      "Questões de preço": 5,
+      "Mudança de ideia": 5,
+      "Não atende plano": 3,
+      "Não faz parto normal": 1
+    },
+    "2026-04": {
+      "Sem resposta": 138,
+      "Spam": 20,
+      "Mudança de ideia": 15,
+      "Não atende plano": 14,
+      "Questões de preço": 8,
+      "Não faz parto normal": 1
+    },
+    "2026-05": {
+      "Sem resposta": 138,
+      "Spam": 18,
+      "Mudança de ideia": 2,
+      "Não atende plano": 1,
+      "Questões de preço": 1
+    },
+    "2026-06": {
+      "Sem resposta": 57,
+      "Não atende plano": 9,
+      "Spam": 4,
+      "Mudança de ideia": 1,
+      "Questões de preço": 1,
+      "Não faz parto normal": 1
+    }
   },
   "procStatus": {
     "Atenção": 8,

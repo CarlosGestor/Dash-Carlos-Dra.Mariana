@@ -34,10 +34,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
 .pill{padding:4px 13px;border-radius:20px;font-size:.74rem;font-weight:500;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:inherit;transition:all .15s;white-space:nowrap}
 .pill:hover{border-color:var(--primary);color:var(--primary)}
 .pill.active{background:var(--primary);border-color:var(--primary);color:#fff}
+.tab-group{display:flex;gap:2px;background:#eef0f5;border-radius:8px;padding:3px;margin-left:auto}
+.tab-btn{padding:5px 16px;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--muted);font-family:inherit;transition:all .15s;white-space:nowrap}
+.tab-btn.active{background:var(--card);color:var(--primary);box-shadow:var(--shadow)}
 
 .main{padding:20px 28px;max-width:1280px;margin:0 auto}
-.note{background:#fffaf0;border:1px solid #fde9c8;color:#92600a;font-size:.72rem;border-radius:8px;padding:9px 13px;margin-bottom:16px;line-height:1.5}
-.note b{font-weight:600}
 
 .kg{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
 .kc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:15px 16px;box-shadow:var(--shadow);display:flex;align-items:flex-start;justify-content:space-between;gap:8px;min-width:0}
@@ -52,35 +53,34 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
 .cc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:16px 18px;box-shadow:var(--shadow);min-width:0;max-width:100%;overflow:hidden}
 .cct{font-size:.85rem;font-weight:600}
 .ccs{font-size:.68rem;color:var(--muted2);margin-top:2px;margin-bottom:12px}
-.cw{position:relative}.h210{height:210px}.h240{height:240px}
+.cw{position:relative}.h210{height:210px}.h260{height:260px}
+.tsec{display:none}.tsec.active{display:block}
+.empty{color:var(--muted2);font-size:.78rem;text-align:center;padding:40px 10px}
 
-/* FUNIL */
-.funnel{display:flex;flex-direction:column;gap:11px;padding:4px 0 2px}
-.fr{display:flex;align-items:center;gap:10px}
-.fn{width:128px;font-size:.72rem;color:var(--muted);text-align:right;flex-shrink:0;font-weight:500}
-.ft{flex:1;height:30px;background:#f0f2f6;border-radius:6px;overflow:hidden;min-width:0}
-.ff{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:11px;font-size:.72rem;font-weight:700;color:#fff;transition:width .6s ease;white-space:nowrap}
-.fc{width:46px;font-size:.82rem;font-weight:700;text-align:right;font-family:'DM Mono',monospace;flex-shrink:0}
-.fconv{font-size:.67rem;color:var(--muted2);margin-top:10px;text-align:center}
+/* FUNIL — barras maiores */
+.funnel{display:flex;flex-direction:column;gap:14px;padding:6px 0 2px}
+.fr{display:flex;align-items:center;gap:12px}
+.fn{width:132px;font-size:.74rem;color:var(--muted);text-align:right;flex-shrink:0;font-weight:600}
+.ft{flex:1;height:42px;background:#eef1f5;border-radius:8px;overflow:hidden;min-width:0}
+.ff{height:100%;border-radius:8px;display:flex;align-items:center;padding-left:14px;font-size:.95rem;font-weight:700;color:#fff;transition:width .6s ease;white-space:nowrap}
+.fc{width:50px;font-size:1rem;font-weight:700;text-align:right;font-family:'DM Mono',monospace;flex-shrink:0}
+.fconv{font-size:.7rem;color:var(--muted2);margin-top:14px;text-align:center}
 
 /* PROC LIST */
-.plist{display:flex;flex-direction:column;gap:8px;max-height:430px;overflow-y:auto}
-.pcard{border:1px solid var(--border);border-radius:8px;padding:10px 12px;background:#fcfdfe}
+.plist{display:flex;flex-direction:column;gap:8px}
+.pcard{border:1px solid var(--border);border-radius:8px;padding:11px 13px;background:#fcfdfe}
 .pcard-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:4px}
-.pname{font-size:.77rem;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pmot{font-size:.71rem;color:var(--muted);line-height:1.4}
+.pname{font-size:.79rem;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pmot{font-size:.73rem;color:var(--muted);line-height:1.45}
 .pmes{font-size:.62rem;color:var(--muted2);font-family:'DM Mono',monospace;margin-top:3px}
-.bdg{display:inline-block;padding:2px 9px;border-radius:5px;font-size:.64rem;font-weight:700;white-space:nowrap;flex-shrink:0}
-.bdg-g{background:var(--green-a);color:#047857}
-.bdg-b{background:var(--primary-a);color:#214a4c}
-.bdg-o{background:var(--amber-a);color:#b45309}
-.bdg-r{background:var(--red-a);color:#b91c1c}
-.pfilter{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:11px}
-.pf{padding:3px 10px;border-radius:14px;font-size:.68rem;font-weight:600;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:inherit}
+.bdg{display:inline-block;padding:3px 10px;border-radius:5px;font-size:.65rem;font-weight:700;white-space:nowrap;flex-shrink:0}
+.bdg-g{background:var(--green-a);color:#047857}.bdg-b{background:var(--primary-a);color:#214a4c}
+.bdg-o{background:var(--amber-a);color:#b45309}.bdg-r{background:var(--red-a);color:#b91c1c}
+.pfilter{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:13px}
+.pf{padding:4px 11px;border-radius:14px;font-size:.69rem;font-weight:600;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:inherit}
 .pf.active{background:var(--primary);border-color:var(--primary);color:#fff}
 
-.loading-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:60vh;gap:16px}
-.spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .7s linear infinite}
+.spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .7s linear infinite;margin:80px auto}
 @keyframes spin{to{transform:rotate(360deg)}}
 .error-box{background:#fff5f5;border:1px solid #fecaca;border-radius:var(--r);padding:24px 32px;text-align:center;max-width:480px;margin:60px auto}
 .error-box h3{color:var(--red);font-size:.95rem;margin-bottom:8px}
@@ -92,8 +92,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
   .hdr-left{gap:10px;flex:1;min-width:0}.logo-wrap{padding-right:10px;gap:6px}
   .hdr h1{font-size:.85rem}.hdr-sub{font-size:.64rem}
   .fbar{padding:8px 14px}.main{padding:14px}
+  .tab-group{margin-left:0;width:100%}.tab-btn{flex:1;text-align:center}
   .kg{grid-template-columns:1fr 1fr;gap:10px}.kval{font-size:1.4rem}.kico{display:none}
-  .cc{padding:14px}.fn{width:96px;font-size:.66rem}
+  .cc{padding:14px}.fn{width:104px;font-size:.68rem}.ft{height:36px}.ff{font-size:.82rem}
   .c2,.row{min-width:0}
 }
 @media(max-width:380px){.kg{grid-template-columns:1fr}}
@@ -109,7 +110,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
     </div>
     <div>
       <h1 id="titulo-clinica">Dra. Mariana — Six Fértile</h1>
-      <div class="hdr-sub">Funil: leads → consulta → procedimento</div>
+      <div class="hdr-sub" id="subtitulo">Consultório Aurora</div>
     </div>
   </div>
   <div class="hdr-right"><span class="badge-upd" id="badge-upd">—</span></div>
@@ -118,173 +119,177 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
 <div class="fbar" id="fbar" style="display:none">
   <span class="flbl">Mês</span>
   <div id="mespills" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+  <div class="tab-group" id="tabgroup">
+    <button class="tab-btn active" data-t="geral">Geral</button>
+    <button class="tab-btn" data-t="motivos">Motivos</button>
+    <button class="tab-btn" data-t="proc">Procedimentos</button>
+  </div>
 </div>
 
-<main class="main" id="main">
-  <div class="loading-wrap"><div class="spinner"></div><div style="color:var(--muted);font-weight:500">Carregando…</div></div>
-</main>
+<main class="main" id="main"><div class="spinner"></div></main>
 
 <script>
 const CONFIG={clinicaNome:'Dra. Mariana — Six Fértile'};
-let DB=null, mesAtivo='todos', procFiltro='todos', charts={};
+let DB=null, mesAtivo='todos', abaAtiva='geral', procFiltro='todos', charts={};
 const MES_NOME={'2026-03':'Março','2026-04':'Abril','2026-05':'Maio','2026-06':'Junho'};
 const PAL=['#214a4c','#2563eb','#d97706','#7c3aed','#dc2626','#0891b2'];
+const PROC_COL={'Ganho':'#059669','Em Aberto':'#214a4c','Atenção':'#d97706','Perdido':'#dc2626'};
+const BDG={'Ganho':'bdg-g','Em Aberto':'bdg-b','Atenção':'bdg-o','Perdido':'bdg-r'};
 
-function fmtPct(a,b){ if(a==null||b==null||b===0) return '—'; return Math.round(a/b*100)+'%'; }
+const pct=(a,b)=>(a==null||b==null||b===0)?'—':Math.round(a/b*100)+'%';
 
 async function init(){
   try{
     const r=await fetch('data.json?t='+Date.now());
-    if(!r.ok) throw new Error('HTTP '+r.status);
-    DB=await r.json();
+    if(!r.ok) throw 0; DB=await r.json();
   }catch(e){
-    document.getElementById('main').innerHTML=
-     '<div class="error-box"><h3>Não consegui carregar o data.json</h3><p>Confirme que <code>data.json</code> está no mesmo repositório/pasta do <code>index.html</code>.</p></div>';
-    return;
+    document.getElementById('main').innerHTML='<div class="error-box"><h3>Não consegui carregar o data.json</h3><p>Confirme que <code>data.json</code> está na mesma pasta do <code>index.html</code>.</p></div>';return;
   }
   document.getElementById('titulo-clinica').textContent=DB.clinica||CONFIG.clinicaNome;
+  document.getElementById('subtitulo').textContent=DB.subtitulo||'';
   document.title='Dashboard – '+(DB.clinica||CONFIG.clinicaNome);
   document.getElementById('badge-upd').textContent='Atualizado '+(DB.ultimaAtualizacao||'');
-  buildMesPills();
-  render();
+  buildPills(); buildTabs(); render();
 }
-
-function buildMesPills(){
+function buildPills(){
   document.getElementById('fbar').style.display='flex';
   const wrap=document.getElementById('mespills');
   const pills=[['todos','Todos']].concat(DB.meses.map(m=>[m,DB.mesesLabel[m]||m]));
   wrap.innerHTML=pills.map(([k,l])=>`<button class="pill ${k===mesAtivo?'active':''}" data-m="${k}">${l}</button>`).join('');
-  wrap.querySelectorAll('.pill').forEach(b=>b.onclick=()=>{mesAtivo=b.dataset.m;buildMesPills();render();});
+  wrap.querySelectorAll('.pill').forEach(b=>b.onclick=()=>{mesAtivo=b.dataset.m;buildPills();render();});
 }
-
-function funilDados(){
-  if(mesAtivo==='todos') return {...DB.totais, label:'Todos os meses (Mar–Jun)'};
-  const f=DB.funil[mesAtivo]; return {...f, label:MES_NOME[mesAtivo]+'/2026'};
+function buildTabs(){
+  document.querySelectorAll('#tabgroup .tab-btn').forEach(b=>{
+    b.classList.toggle('active',b.dataset.t===abaAtiva);
+    b.onclick=()=>{abaAtiva=b.dataset.t;buildTabs();render();};
+  });
+}
+function funilData(){
+  if(mesAtivo==='todos') return {...DB.totais,label:'Todos os meses (Mar–Jun)'};
+  return {...DB.funil[mesAtivo],label:MES_NOME[mesAtivo]+'/2026'};
+}
+function procStatusFor(){
+  if(mesAtivo==='todos') return DB.procStatus;
+  const it=DB.procLista.filter(p=>p.mkey===mesAtivo);
+  if(!it.length) return null;
+  const c={};it.forEach(p=>c[p.status]=(c[p.status]||0)+1);return c;
+}
+function motivosFor(){
+  if(mesAtivo==='todos') return DB.perdidosMotivo;
+  return DB.perdidosMotivoMes[mesAtivo]||null;
 }
 
 function render(){
-  const f=funilDados();
-  const main=document.getElementById('main');
+  const f=funilData(), main=document.getElementById('main');
+  const mesTxt = mesAtivo==='todos' ? 'Mar–Jun' : (MES_NOME[mesAtivo]+'/2026');
   main.innerHTML=`
-  <div class="note">⚠️ <b>Coberturas diferentes:</b> leads sem março · procedimentos (Meire) sem junho · junho parcial (até 16/06). Funil 100% completo só em <b>abril</b> e <b>maio</b>. Perdidos contados pela <b>data de criação</b> do lead.</div>
-
-  <div class="kg">
-    <div class="kc"><div><div class="klbl">Leads que entram</div><div class="kval" style="color:var(--primary)">${f.entram??'—'}</div><div class="ksub">novos contatos no período<br><span style="color:var(--muted)">inclui spam/parceiros</span></div></div><div class="kico kb">↘</div></div>
-    <div class="kc"><div><div class="klbl">Fecham consulta</div><div class="kval" style="color:var(--green)">${f.novas??'—'}</div><div class="ksub">consultas novas (todas TTO)<br>${fmtPct(f.novas,f.entram)} dos leads</div></div><div class="kico kt">✓</div></div>
-    <div class="kc"><div><div class="klbl">Enviados à Meire</div><div class="kval" style="color:var(--blue)">${f.enviados??'—'}</div><div class="ksub">viraram caso de procedimento<br>${fmtPct(f.enviados,f.novas)} das novas</div></div><div class="kico ko">→</div></div>
-    <div class="kc"><div><div class="klbl">Fecham procedimento</div><div class="kval" style="color:var(--amber)">${f.fecha??'—'}</div><div class="ksub">"Ganho" com a Meire<br>${fmtPct(f.fecha,f.enviados)} dos enviados</div></div><div class="kico kp">★</div></div>
-  </div>
-
-  <div class="row c2">
-    <div class="cc">
-      <div class="cct">Funil do período</div><div class="ccs">${f.label}</div>
-      <div class="funnel" id="funnel"></div>
-      <div class="fconv" id="fconv"></div>
+  <!-- GERAL -->
+  <section class="tsec ${abaAtiva==='geral'?'active':''}">
+    <div class="kg">
+      <div class="kc"><div><div class="klbl">Leads que entram</div><div class="kval" style="color:var(--primary)">${f.entram??'—'}</div><div class="ksub">novos contatos · ${mesTxt}<br><span>inclui spam/parceiros</span></div></div><div class="kico kb">↘</div></div>
+      <div class="kc"><div><div class="klbl">Fecham consulta</div><div class="kval" style="color:var(--green)">${f.novas??'—'}</div><div class="ksub">consultas novas (TTO)<br>${pct(f.novas,f.entram)} dos leads</div></div><div class="kico kt">✓</div></div>
+      <div class="kc"><div><div class="klbl">Enviados à Meire</div><div class="kval" style="color:var(--blue)">${f.enviados??'—'}</div><div class="ksub">casos de procedimento<br>${pct(f.enviados,f.novas)} das novas</div></div><div class="kico ko">→</div></div>
+      <div class="kc"><div><div class="klbl">Fecham procedimento</div><div class="kval" style="color:var(--amber)">${f.fecha??'—'}</div><div class="ksub">"Ganho" com a Meire<br>${pct(f.fecha,f.enviados)} dos enviados</div></div><div class="kico kp">★</div></div>
     </div>
-    <div class="cc">
-      <div class="cct">Por que não fechou consulta</div><div class="ccs">Motivo de perda — todo o período (Mar–Jun)</div>
-      <div class="cw h240"><canvas id="c-mot"></canvas></div>
+    <div class="row c1">
+      <div class="cc">
+        <div class="cct">Funil do período</div><div class="ccs">${f.label}</div>
+        <div class="funnel" id="funnel"></div>
+        <div class="fconv" id="fconv"></div>
+      </div>
     </div>
-  </div>
+    <div class="row c1">
+      <div class="cc">
+        <div class="cct">Leads perdidos por mês</div><div class="ccs">Pela data de criação do lead${mesAtivo!=='todos'?' · mês selecionado em destaque':''}</div>
+        <div class="cw h210"><canvas id="c-perd"></canvas></div>
+      </div>
+    </div>
+  </section>
 
-  <div class="row c2">
-    <div class="cc">
-      <div class="cct">Leads perdidos por mês</div><div class="ccs">Pela data de criação do lead</div>
-      <div class="cw h210"><canvas id="c-perd"></canvas></div>
+  <!-- MOTIVOS -->
+  <section class="tsec ${abaAtiva==='motivos'?'active':''}">
+    <div class="row c2">
+      <div class="cc">
+        <div class="cct">Por que não fechou consulta</div><div class="ccs">Motivo de perda · ${mesTxt}</div>
+        <div class="cw h260" id="wrap-mot"><canvas id="c-mot"></canvas></div>
+      </div>
+      <div class="cc">
+        <div class="cct">Procedimentos (Meire) — situação</div><div class="ccs">Por que não fechou procedimento · ${mesTxt}</div>
+        <div class="cw h260" id="wrap-proc"><canvas id="c-proc"></canvas></div>
+      </div>
     </div>
-    <div class="cc">
-      <div class="cct">Procedimentos (Meire) — situação</div><div class="ccs">Mar–Mai · ${DB.totais.enviados} casos enviados</div>
-      <div class="cw h210"><canvas id="c-proc"></canvas></div>
-    </div>
-  </div>
+  </section>
 
-  <div class="row c1">
-    <div class="cc">
+  <!-- PROCEDIMENTOS -->
+  <section class="tsec ${abaAtiva==='proc'?'active':''}">
+    <div class="row c1"><div class="cc">
       <div class="cct">Procedimentos em aberto, atenção e perda — e o motivo</div>
-      <div class="ccs">O que está travando cada caso enviado à Meire</div>
+      <div class="ccs">O que está travando cada caso enviado à Meire · ${mesTxt}</div>
       <div class="pfilter" id="pfilter"></div>
       <div class="plist" id="plist"></div>
-    </div>
-  </div>`;
+    </div></div>
+  </section>`;
 
-  drawFunnel(f);
-  drawMotivos();
-  drawPerdidos();
-  drawProc();
-  drawProcList();
+  if(abaAtiva==='geral'){ drawFunnel(f); drawPerdidos(); }
+  if(abaAtiva==='motivos'){ drawMotivos(); drawProc(); }
+  if(abaAtiva==='proc'){ drawProcList(); }
 }
 
 function drawFunnel(f){
-  const stages=[
-    ['Entram',f.entram,'var(--primary)'],
-    ['Fecham consulta',f.novas,'var(--green)'],
-    ['Enviados à Meire',f.enviados,'var(--blue)'],
-    ['Fecham procedimento',f.fecha,'var(--amber)']
-  ];
-  const base=stages.map(s=>s[1]).filter(v=>v!=null&&v>0);
-  const max=base.length?Math.max(...base):1;
+  const stages=[['Entram',f.entram,'var(--primary)'],['Fecham consulta',f.novas,'var(--green)'],['Enviados à Meire',f.enviados,'var(--blue)'],['Fecham procedimento',f.fecha,'var(--amber)']];
+  const base=stages.map(s=>s[1]).filter(v=>v!=null&&v>0); const max=base.length?Math.max(...base):1;
   document.getElementById('funnel').innerHTML=stages.map(([n,v,c])=>{
-    const w=(v==null)?0:Math.max(4,Math.round(v/max*100));
-    const txt=(v==null)?'sem dados':v;
-    return `<div class="fr"><div class="fn">${n}</div><div class="ft"><div class="ff" style="width:${w}%;background:${c};${v==null?'opacity:.25;color:var(--muted)':''}">${v==null?'':v}</div></div><div class="fc">${v==null?'—':v}</div></div>`;
+    const w=(v==null)?0:Math.max(6,Math.round(v/max*100));
+    return `<div class="fr"><div class="fn">${n}</div><div class="ft"><div class="ff" style="width:${w}%;background:${c}">${v==null?'':v}</div></div><div class="fc">${v==null?'—':v}</div></div>`;
   }).join('');
   let conv='';
-  if(f.entram&&f.novas) conv=`Lead→consulta ${fmtPct(f.novas,f.entram)} · `;
-  if(f.novas&&f.enviados) conv+=`consulta→Meire ${fmtPct(f.enviados,f.novas)} · `;
-  if(f.enviados&&f.fecha!=null) conv+=`Meire→fecha ${fmtPct(f.fecha,f.enviados)}`;
-  document.getElementById('fconv').textContent=conv||'Funil completo só nos meses com as 4 pontas.';
+  if(f.entram&&f.novas) conv+=`Lead→consulta ${pct(f.novas,f.entram)} · `;
+  if(f.novas&&f.enviados) conv+=`consulta→Meire ${pct(f.enviados,f.novas)} · `;
+  if(f.enviados&&f.fecha!=null) conv+=`Meire→fecha ${pct(f.fecha,f.enviados)}`;
+  document.getElementById('fconv').textContent=conv.replace(/ · $/,'')||'Sem dados suficientes neste mês para o funil completo.';
 }
-
-function destroy(id){ if(charts[id]){charts[id].destroy(); delete charts[id];} }
-
-function drawMotivos(){
-  destroy('mot');
-  const e=DB.perdidosMotivo, labels=Object.keys(e), data=Object.values(e);
-  charts['mot']=new Chart(document.getElementById('c-mot'),{type:'doughnut',
-    data:{labels,datasets:[{data,backgroundColor:PAL,borderWidth:2,borderColor:'#fff'}]},
-    options:{responsive:true,maintainAspectRatio:false,cutout:'58%',
-      plugins:{legend:{position:'right',labels:{boxWidth:11,font:{size:11},padding:8}},
-      tooltip:{callbacks:{label:c=>` ${c.label}: ${c.raw} (${Math.round(c.raw/data.reduce((a,b)=>a+b)*100)}%)`}}}}});
-}
+function destroy(id){ if(charts[id]){charts[id].destroy();delete charts[id];} }
 function drawPerdidos(){
   destroy('perd');
   const labels=DB.meses.map(m=>DB.mesesLabel[m]||m);
   const data=DB.meses.map(m=>DB.perdidosMes[m]??0);
+  const colors=DB.meses.map(m=> mesAtivo==='todos' ? '#214a4c' : (m===mesAtivo?'#214a4c':'#cbd5d6'));
   charts['perd']=new Chart(document.getElementById('c-perd'),{type:'bar',
-    data:{labels,datasets:[{data,backgroundColor:'#214a4c',borderRadius:6,maxBarThickness:54}]},
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw} leads perdidos`}}},
-      scales:{y:{beginAtZero:true,grid:{color:'#f0f2f6'},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:11}}}}}});
+    data:{labels,datasets:[{data,backgroundColor:colors,borderRadius:6,maxBarThickness:60}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw} leads perdidos`}}},
+    scales:{y:{beginAtZero:true,grid:{color:'#f0f2f6'},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:11}}}}}});
+}
+function drawMotivos(){
+  destroy('mot'); const e=motivosFor();
+  if(!e){document.getElementById('wrap-mot').innerHTML='<div class="empty">Sem perdas registradas neste mês.</div>';return;}
+  const labels=Object.keys(e),data=Object.values(e),tot=data.reduce((a,b)=>a+b,0);
+  charts['mot']=new Chart(document.getElementById('c-mot'),{type:'doughnut',
+    data:{labels,datasets:[{data,backgroundColor:PAL,borderWidth:2,borderColor:'#fff'}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'58%',
+      plugins:{legend:{position:'right',labels:{boxWidth:11,font:{size:11},padding:8}},
+      tooltip:{callbacks:{label:c=>` ${c.label}: ${c.raw} (${Math.round(c.raw/tot*100)}%)`}}}}});
 }
 function drawProc(){
-  destroy('proc');
-  const order=['Ganho','Em Aberto','Atenção','Perdido'];
-  const col={'Ganho':'#059669','Em Aberto':'#214a4c','Atenção':'#d97706','Perdido':'#dc2626'};
-  const labels=order.filter(s=>DB.procStatus[s]!=null);
-  const data=labels.map(s=>DB.procStatus[s]);
+  destroy('proc'); const s=procStatusFor();
+  if(!s){document.getElementById('wrap-proc').innerHTML='<div class="empty">Sem dados de procedimentos neste mês.<br><span style="font-size:.7rem">(Planilha da Meire vai até maio)</span></div>';return;}
+  const order=['Ganho','Em Aberto','Atenção','Perdido'].filter(k=>s[k]!=null);
   charts['proc']=new Chart(document.getElementById('c-proc'),{type:'doughnut',
-    data:{labels,datasets:[{data,backgroundColor:labels.map(s=>col[s]),borderWidth:2,borderColor:'#fff'}]},
+    data:{labels:order,datasets:[{data:order.map(k=>s[k]),backgroundColor:order.map(k=>PROC_COL[k]),borderWidth:2,borderColor:'#fff'}]},
     options:{responsive:true,maintainAspectRatio:false,cutout:'58%',
       plugins:{legend:{position:'right',labels:{boxWidth:11,font:{size:11},padding:10}}}}});
 }
-
-const BDG={'Ganho':'bdg-g','Em Aberto':'bdg-b','Atenção':'bdg-o','Perdido':'bdg-r'};
 function drawProcList(){
-  const counts={todos:DB.procLista.length};
-  DB.procLista.forEach(p=>counts[p.status]=(counts[p.status]||0)+1);
+  const inMes=DB.procLista.filter(p=>mesAtivo==='todos'||p.mkey===mesAtivo);
+  const counts={todos:inMes.length}; inMes.forEach(p=>counts[p.status]=(counts[p.status]||0)+1);
   const opts=[['todos','Todos']].concat(['Em Aberto','Atenção','Perdido','Ganho'].map(s=>[s,s]));
-  document.getElementById('pfilter').innerHTML=opts.map(([k,l])=>
-    `<button class="pf ${k===procFiltro?'active':''}" data-s="${k}">${l} ${counts[k]?`(${counts[k]})`:'(0)'}</button>`).join('');
+  document.getElementById('pfilter').innerHTML=opts.map(([k,l])=>`<button class="pf ${k===procFiltro?'active':''}" data-s="${k}">${l} (${counts[k]||0})</button>`).join('');
   document.querySelectorAll('#pfilter .pf').forEach(b=>b.onclick=()=>{procFiltro=b.dataset.s;drawProcList();});
-  const list=DB.procLista.filter(p=>procFiltro==='todos'||p.status===procFiltro);
+  const list=inMes.filter(p=>procFiltro==='todos'||p.status===procFiltro);
   document.getElementById('plist').innerHTML=list.map(p=>`
-    <div class="pcard">
-      <div class="pcard-top"><span class="pname">${p.nome}</span><span class="bdg ${BDG[p.status]||'bdg-b'}">${p.status}</span></div>
-      <div class="pmot">${p.motivo}</div>
-      <div class="pmes">${p.mes}/2026</div>
-    </div>`).join('') || '<div style="color:var(--muted2);font-size:.75rem;padding:8px">Nenhum caso neste filtro.</div>';
+    <div class="pcard"><div class="pcard-top"><span class="pname">${p.nome}</span><span class="bdg ${BDG[p.status]||'bdg-b'}">${p.status}</span></div>
+    <div class="pmot">${p.motivo}</div><div class="pmes">${p.mes}/2026</div></div>`).join('')
+    || '<div class="empty">Nenhum caso neste filtro.</div>';
 }
-
 init();
 </script>
 </body>
