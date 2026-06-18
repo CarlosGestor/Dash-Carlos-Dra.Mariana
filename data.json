@@ -12,7 +12,7 @@
     "2026-03": "Mar",
     "2026-04": "Abr",
     "2026-05": "Mai",
-    "2026-06": "Jun*"
+    "2026-06": "Jun"
   },
   "funil": {
     "2026-03": {
@@ -260,5 +260,207 @@
       "status": "Ganho",
       "motivo": "Fechou 2 FIVs em junho/2026."
     }
-  ]
+  ],
+  "consultorioTotal": 430,
+  "consultorioFinalidade": {
+    "todos": {
+      "Pré natal": 256,
+      "Ginecologia/Rotina anual": 53,
+      "TTO 1 vez": 39,
+      "Rotina pós parto": 18,
+      "Exame": 17,
+      "Rotina 1 vez": 12,
+      "TTO Retorno": 11,
+      "Rotina Retorno": 11,
+      "TTO": 7,
+      "Pré natal 1 vez": 4,
+      "Retorno pós parto": 2
+    },
+    "2026-03": {
+      "Pré natal": 89,
+      "Ginecologia/Rotina anual": 14,
+      "TTO 1 vez": 10,
+      "Exame": 6,
+      "Rotina Retorno": 5,
+      "Rotina 1 vez": 4,
+      "TTO Retorno": 4,
+      "Rotina pós parto": 3,
+      "TTO": 2,
+      "Pré natal 1 vez": 2
+    },
+    "2026-04": {
+      "Pré natal": 68,
+      "TTO 1 vez": 10,
+      "Ginecologia/Rotina anual": 7,
+      "Exame": 3,
+      "Rotina 1 vez": 3,
+      "Rotina Retorno": 2,
+      "TTO Retorno": 2,
+      "Rotina pós parto": 2,
+      "Retorno pós parto": 2
+    },
+    "2026-05": {
+      "Pré natal": 70,
+      "Ginecologia/Rotina anual": 16,
+      "TTO 1 vez": 14,
+      "Rotina pós parto": 10,
+      "Exame": 4,
+      "TTO Retorno": 3,
+      "Rotina 1 vez": 3,
+      "Pré natal 1 vez": 2,
+      "Rotina Retorno": 2,
+      "TTO": 2
+    },
+    "2026-06": {
+      "Pré natal": 29,
+      "Ginecologia/Rotina anual": 16,
+      "TTO 1 vez": 5,
+      "Exame": 4,
+      "Rotina pós parto": 3,
+      "TTO": 3,
+      "TTO Retorno": 2,
+      "Rotina Retorno": 2,
+      "Rotina 1 vez": 2
+    }
+  },
+  "consultorioSemana": {
+    "todos": [
+      {
+        "semana": "02/03–08/03",
+        "qtd": 29
+      },
+      {
+        "semana": "09/03–15/03",
+        "qtd": 36
+      },
+      {
+        "semana": "16/03–22/03",
+        "qtd": 29
+      },
+      {
+        "semana": "23/03–29/03",
+        "qtd": 24
+      },
+      {
+        "semana": "30/03–05/04",
+        "qtd": 21
+      },
+      {
+        "semana": "06/04–12/04",
+        "qtd": 31
+      },
+      {
+        "semana": "13/04–19/04",
+        "qtd": 23
+      },
+      {
+        "semana": "20/04–26/04",
+        "qtd": 22
+      },
+      {
+        "semana": "27/04–03/05",
+        "qtd": 23
+      },
+      {
+        "semana": "04/05–10/05",
+        "qtd": 28
+      },
+      {
+        "semana": "11/05–17/05",
+        "qtd": 34
+      },
+      {
+        "semana": "18/05–24/05",
+        "qtd": 33
+      },
+      {
+        "semana": "25/05–31/05",
+        "qtd": 31
+      },
+      {
+        "semana": "01/06–07/06",
+        "qtd": 20
+      },
+      {
+        "semana": "08/06–14/06",
+        "qtd": 30
+      },
+      {
+        "semana": "15/06–21/06",
+        "qtd": 16
+      }
+    ],
+    "2026-03": [
+      {
+        "semana": "02/03–08/03",
+        "qtd": 29
+      },
+      {
+        "semana": "09/03–15/03",
+        "qtd": 36
+      },
+      {
+        "semana": "16/03–22/03",
+        "qtd": 29
+      },
+      {
+        "semana": "23/03–29/03",
+        "qtd": 24
+      },
+      {
+        "semana": "30/03–05/04",
+        "qtd": 21
+      }
+    ],
+    "2026-04": [
+      {
+        "semana": "06/04–12/04",
+        "qtd": 31
+      },
+      {
+        "semana": "13/04–19/04",
+        "qtd": 23
+      },
+      {
+        "semana": "20/04–26/04",
+        "qtd": 22
+      },
+      {
+        "semana": "27/04–03/05",
+        "qtd": 23
+      }
+    ],
+    "2026-05": [
+      {
+        "semana": "04/05–10/05",
+        "qtd": 28
+      },
+      {
+        "semana": "11/05–17/05",
+        "qtd": 34
+      },
+      {
+        "semana": "18/05–24/05",
+        "qtd": 33
+      },
+      {
+        "semana": "25/05–31/05",
+        "qtd": 31
+      }
+    ],
+    "2026-06": [
+      {
+        "semana": "01/06–07/06",
+        "qtd": 20
+      },
+      {
+        "semana": "08/06–14/06",
+        "qtd": 30
+      },
+      {
+        "semana": "15/06–21/06",
+        "qtd": 16
+      }
+    ]
+  }
 }

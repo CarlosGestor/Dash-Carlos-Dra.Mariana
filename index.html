@@ -35,18 +35,21 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
 .pill:hover{border-color:var(--primary);color:var(--primary)}
 .pill.active{background:var(--primary);border-color:var(--primary);color:#fff}
 .tab-group{display:flex;gap:2px;background:#eef0f5;border-radius:8px;padding:3px;margin-left:auto}
-.tab-btn{padding:5px 18px;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--muted);font-family:inherit;transition:all .15s;white-space:nowrap}
+.tab-btn{padding:5px 16px;border-radius:6px;font-size:.75rem;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--muted);font-family:inherit;transition:all .15s;white-space:nowrap}
 .tab-btn.active{background:var(--card);color:var(--primary);box-shadow:var(--shadow)}
 
 .main{padding:20px 28px;max-width:1280px;margin:0 auto}
 
 .kg{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:14px}
 .kc{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:15px 16px;box-shadow:var(--shadow);display:flex;align-items:flex-start;justify-content:space-between;gap:8px;min-width:0}
-.klbl{font-size:.61rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:6px}
+.klbl{font-size:.61rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:8px}
 .kval{font-size:1.7rem;font-weight:700;letter-spacing:-.5px;line-height:1}
-.ksub{font-size:.67rem;color:var(--muted2);margin-top:6px;line-height:1.35}
 .kico{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:15px;font-weight:700}
 .kb{background:var(--primary-a);color:var(--primary)}.kt{background:var(--green-a);color:var(--green)}.ko{background:var(--blue-a);color:var(--blue)}.kp{background:var(--amber-a);color:var(--amber)}
+.delta{display:inline-flex;align-items:center;gap:4px;font-size:.66rem;font-weight:700;margin-top:9px;padding:2px 7px;border-radius:5px}
+.delta-up{background:var(--green-a);color:#047857}
+.delta-down{background:var(--red-a);color:#b91c1c}
+.delta-flat{background:#eef1f5;color:var(--muted2)}
 
 .row{display:grid;gap:12px;margin-bottom:12px}
 .c2{grid-template-columns:1fr 1fr}.c1{grid-template-columns:1fr}
@@ -57,14 +60,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
 .tsec{display:none}.tsec.active{display:block}
 .empty{color:var(--muted2);font-size:.78rem;text-align:center;padding:40px 10px}
 
-/* FUNIL — barras maiores, pequenos bem visíveis */
+/* FUNIL */
 .funnel{display:flex;flex-direction:column;gap:14px;padding:6px 0 2px}
 .fr{display:flex;align-items:center;gap:12px}
 .fn{width:132px;font-size:.74rem;color:var(--muted);text-align:right;flex-shrink:0;font-weight:600}
 .ft{flex:1;height:44px;background:#eef1f5;border-radius:8px;overflow:hidden;min-width:0}
 .ff{height:100%;border-radius:8px;display:flex;align-items:center;padding-left:14px;font-size:1rem;font-weight:700;color:#fff;transition:width .6s ease;white-space:nowrap}
 .fc{width:50px;font-size:1rem;font-weight:700;text-align:right;font-family:'DM Mono',monospace;flex-shrink:0}
-.fconv{font-size:.7rem;color:var(--muted2);margin-top:14px;text-align:center}
+.fconv{font-size:.72rem;color:var(--muted);margin-top:14px;text-align:center;font-weight:500}
 
 /* LISTA PROC */
 .plist{display:flex;flex-direction:column;gap:8px}
@@ -80,20 +83,33 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
 .pf{padding:4px 11px;border-radius:14px;font-size:.69rem;font-weight:600;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--muted);font-family:inherit}
 .pf.active{background:var(--primary);border-color:var(--primary);color:#fff}
 
+/* CONSULTÓRIO — cards finalidade + tabela semana */
+.cong{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.conc{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:13px 15px;box-shadow:var(--shadow)}
+.conc .v{font-size:1.5rem;font-weight:700;color:var(--primary);line-height:1}
+.conc .l{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-top:7px;line-height:1.3}
+.ctab{width:100%;border-collapse:collapse;font-size:.82rem}
+.ctab th,.ctab td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--border)}
+.ctab th{font-size:.64rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted2);font-weight:600}
+.ctab td.num,.ctab th.num{text-align:right;font-family:'DM Mono',monospace;font-weight:600}
+.ctab tr:last-child td{border-bottom:none}
+.ctab .tot td{font-weight:700;border-top:2px solid var(--border);color:var(--primary)}
+
 .spinner{width:36px;height:36px;border:3px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .7s linear infinite;margin:80px auto}
 @keyframes spin{to{transform:rotate(360deg)}}
 .error-box{background:#fff5f5;border:1px solid #fecaca;border-radius:var(--r);padding:24px 32px;text-align:center;max-width:480px;margin:60px auto}
 .error-box h3{color:var(--red);font-size:.95rem;margin-bottom:8px}
 .error-box code{font-family:'DM Mono',monospace;font-size:.78rem;background:#fee2e2;padding:2px 6px;border-radius:4px;color:#991b1b}
 
-@media(max-width:1100px){.kg{grid-template-columns:repeat(2,1fr)}.c2{grid-template-columns:1fr}}
+@media(max-width:1100px){.kg,.cong{grid-template-columns:repeat(2,1fr)}.c2{grid-template-columns:1fr}}
 @media(max-width:680px){
   .hdr{height:auto;min-height:52px;padding:8px 14px;flex-wrap:wrap;gap:6px;row-gap:4px}
   .hdr-left{gap:10px;flex:1;min-width:0}.logo-wrap{padding-right:10px;gap:6px}
   .hdr h1{font-size:.85rem}.hdr-sub{font-size:.64rem}
   .fbar{padding:8px 14px}.main{padding:14px}
-  .tab-group{margin-left:0;width:100%}.tab-btn{flex:1;text-align:center}
+  .tab-group{margin-left:0;width:100%}.tab-btn{flex:1;text-align:center;padding:5px 8px}
   .kg{grid-template-columns:1fr 1fr;gap:10px}.kval{font-size:1.4rem}.kico{display:none}
+  .cong{grid-template-columns:1fr 1fr}.conc .v{font-size:1.3rem}
   .cc{padding:14px}.fn{width:104px;font-size:.68rem}.ft{height:38px}.ff{font-size:.85rem}
   .c2,.row{min-width:0}
 }
@@ -122,6 +138,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--fg);font-
   <div class="tab-group" id="tabgroup">
     <button class="tab-btn active" data-t="geral">Geral</button>
     <button class="tab-btn" data-t="motivos">Motivos</button>
+    <button class="tab-btn" data-t="consultorio">Consultório</button>
   </div>
 </div>
 
@@ -158,21 +175,33 @@ function buildTabs(){
     b.onclick=()=>{abaAtiva=b.dataset.t;buildTabs();render();};
   });
 }
-function funilData(){ return mesAtivo==='todos' ? {...DB.totais,label:'Todos os meses (Mar–Jun)'} : {...DB.funil[mesAtivo],label:MES_NOME[mesAtivo]+'/2026'}; }
+const sufixo=()=> mesAtivo==='todos' ? '' : ' · '+MES_NOME[mesAtivo]+'/2026';
+function funilData(){ return mesAtivo==='todos' ? {...DB.totais,label:'Todos os meses'} : {...DB.funil[mesAtivo],label:MES_NOME[mesAtivo]+'/2026'}; }
 function procStatusFor(){ if(mesAtivo==='todos') return DB.procStatus; const it=DB.procLista.filter(p=>p.mkey===mesAtivo); if(!it.length) return null; const c={};it.forEach(p=>c[p.status]=(c[p.status]||0)+1);return c; }
 function motivosFor(){ return mesAtivo==='todos' ? DB.perdidosMotivo : (DB.perdidosMotivoMes[mesAtivo]||null); }
 
+// comparador de crescimento vs mês anterior (verde/vermelho)
+function growthBadge(key){
+  if(mesAtivo==='todos') return '';
+  const i=DB.meses.indexOf(mesAtivo); if(i<=0) return '<div class="delta delta-flat">sem mês anterior</div>';
+  const cur=DB.funil[mesAtivo][key], prev=DB.funil[DB.meses[i-1]][key];
+  if(cur==null||prev==null||prev===0) return '<div class="delta delta-flat">— vs mês ant.</div>';
+  const d=Math.round((cur-prev)/prev*100);
+  const cls=d>0?'delta-up':d<0?'delta-down':'delta-flat';
+  const arr=d>0?'▲':d<0?'▼':'■';
+  return `<div class="delta ${cls}">${arr} ${Math.abs(d)}% vs mês ant.</div>`;
+}
+
 function render(){
-  const f=funilData(), main=document.getElementById('main');
-  const mesTxt = mesAtivo==='todos' ? 'Mar–Jun' : (MES_NOME[mesAtivo]+'/2026');
+  const f=funilData(), main=document.getElementById('main'), sx=sufixo();
   main.innerHTML=`
   <!-- ===== GERAL ===== -->
   <section class="tsec ${abaAtiva==='geral'?'active':''}">
     <div class="kg">
-      <div class="kc"><div><div class="klbl">Leads que entram</div><div class="kval" style="color:var(--primary)">${f.entram??'—'}</div><div class="ksub">novos contatos · ${mesTxt}<br><span>inclui spam/parceiros</span></div></div><div class="kico kb">↘</div></div>
-      <div class="kc"><div><div class="klbl">Fecham consulta</div><div class="kval" style="color:var(--green)">${f.novas??'—'}</div><div class="ksub">consultas novas (TTO)<br>${pct(f.novas,f.entram)} dos leads</div></div><div class="kico kt">✓</div></div>
-      <div class="kc"><div><div class="klbl">Enviados à Meire</div><div class="kval" style="color:var(--blue)">${f.enviados??'—'}</div><div class="ksub">casos de procedimento<br>${pct(f.enviados,f.novas)} das novas</div></div><div class="kico ko">→</div></div>
-      <div class="kc"><div><div class="klbl">Fecham procedimento</div><div class="kval" style="color:var(--amber)">${f.fecha??'—'}</div><div class="ksub">"Ganho" com a Meire<br>${pct(f.fecha,f.enviados)} dos enviados</div></div><div class="kico kp">★</div></div>
+      <div class="kc"><div><div class="klbl">Leads que entram</div><div class="kval" style="color:var(--primary)">${f.entram??'—'}</div>${growthBadge('entram')}</div><div class="kico kb">↘</div></div>
+      <div class="kc"><div><div class="klbl">Fecham consulta</div><div class="kval" style="color:var(--green)">${f.novas??'—'}</div>${growthBadge('novas')}</div><div class="kico kt">✓</div></div>
+      <div class="kc"><div><div class="klbl">Enviados à Meire</div><div class="kval" style="color:var(--blue)">${f.enviados??'—'}</div>${growthBadge('enviados')}</div><div class="kico ko">→</div></div>
+      <div class="kc"><div><div class="klbl">Fecham procedimento</div><div class="kval" style="color:var(--amber)">${f.fecha??'—'}</div>${growthBadge('fecha')}</div><div class="kico kp">★</div></div>
     </div>
 
     <div class="row c2">
@@ -182,7 +211,7 @@ function render(){
         <div class="fconv" id="fconv"></div>
       </div>
       <div class="cc">
-        <div class="cct">Por que não fechou consulta</div><div class="ccs">Motivo de perda · ${mesTxt}</div>
+        <div class="cct">Por que não fechou consulta</div><div class="ccs">Motivo de perda${sx}</div>
         <div class="cw h260" id="wrap-mot"><canvas id="c-mot"></canvas></div>
       </div>
     </div>
@@ -193,7 +222,7 @@ function render(){
         <div class="cw h210"><canvas id="c-perd"></canvas></div>
       </div>
       <div class="cc">
-        <div class="cct">Procedimentos - Status</div><div class="ccs">Situação dos casos enviados à Meire · ${mesTxt}</div>
+        <div class="cct">Procedimentos - Status</div><div class="ccs">Situação dos casos enviados à Meire${sx}</div>
         <div class="cw h260" id="wrap-proc"><canvas id="c-proc"></canvas></div>
       </div>
     </div>
@@ -203,20 +232,30 @@ function render(){
   <section class="tsec ${abaAtiva==='motivos'?'active':''}">
     <div class="row c1">
       <div class="cc">
-        <div class="cct">Motivos da consulta — por que não fechou</div><div class="ccs">Quantidade por motivo · ${mesTxt}</div>
+        <div class="cct">Motivos da consulta — por que não fechou</div><div class="ccs">Quantidade por motivo${sx}</div>
         <div class="cw h260" id="wrap-motbar"><canvas id="c-motbar"></canvas></div>
       </div>
     </div>
     <div class="row c1"><div class="cc">
       <div class="cct">Lista de Procedimento e motivos</div>
-      <div class="ccs">O que está travando cada caso enviado à Meire · ${mesTxt}</div>
+      <div class="ccs">O que está travando cada caso enviado à Meire${sx}</div>
       <div class="pfilter" id="pfilter"></div>
       <div class="plist" id="plist"></div>
+    </div></div>
+  </section>
+
+  <!-- ===== CONSULTÓRIO ===== -->
+  <section class="tsec ${abaAtiva==='consultorio'?'active':''}">
+    <div class="cong" id="cons-cards"></div>
+    <div class="row c1"><div class="cc">
+      <div class="cct">Consultas por semana</div><div class="ccs">Quantidade de consultas realizadas${sx}</div>
+      <div id="cons-tab" style="overflow-x:auto"></div>
     </div></div>
   </section>`;
 
   if(abaAtiva==='geral'){ drawFunnel(f); drawConsultaDonut(); drawPerdidos(); drawProcDonut(); }
   if(abaAtiva==='motivos'){ drawMotivosBar(); drawProcList(); }
+  if(abaAtiva==='consultorio'){ drawConsultorio(); }
 }
 
 function destroy(id){ if(charts[id]){charts[id].destroy();delete charts[id];} }
@@ -224,30 +263,24 @@ function destroy(id){ if(charts[id]){charts[id].destroy();delete charts[id];} }
 function drawFunnel(f){
   const stages=[['Entram',f.entram,'var(--primary)'],['Fecham consulta',f.novas,'var(--green)'],['Enviados à Meire',f.enviados,'var(--blue)'],['Fecham procedimento',f.fecha,'var(--amber)']];
   const base=stages.map(s=>s[1]).filter(v=>v!=null&&v>0); const max=base.length?Math.max(...base):1;
-  // piso de 22% pra os valores pequenos ficarem bem visíveis
   document.getElementById('funnel').innerHTML=stages.map(([n,v,c])=>{
     const w=(v==null)?0:Math.round(22+(v/max)*78);
     return `<div class="fr"><div class="fn">${n}</div><div class="ft"><div class="ff" style="width:${w}%;background:${c}">${v==null?'':v}</div></div><div class="fc">${v==null?'—':v}</div></div>`;
   }).join('');
-  let conv='';
-  if(f.entram&&f.novas) conv+=`Lead→consulta ${pct(f.novas,f.entram)} · `;
-  if(f.novas&&f.enviados) conv+=`consulta→Meire ${pct(f.enviados,f.novas)} · `;
-  if(f.enviados&&f.fecha!=null) conv+=`Meire→fecha ${pct(f.fecha,f.enviados)}`;
-  document.getElementById('fconv').textContent=conv.replace(/ · $/,'')||'Sem dados suficientes neste mês para o funil completo.';
+  // taxa de conversão (consultas = Neuris, procedimento = Meire)
+  const cNeuris=(f.novas!=null&&f.entram)?Math.round(f.novas/f.entram*100):null;
+  const cMeire=(f.fecha!=null&&f.enviados)?Math.round(f.fecha/f.enviados*100):null;
+  document.getElementById('fconv').innerHTML=
+    `Conversão consultas (Neuris): <b>${cNeuris==null?'—':cNeuris+'%'}</b> &nbsp;·&nbsp; Conversão procedimentos (Meire): <b>${cMeire==null?'—':cMeire+'%'}</b>`;
 }
-
-// Leads perdidos por mês — fixo, igual estava (não muda com filtro)
 function drawPerdidos(){
   destroy('perd');
-  const labels=DB.meses.map(m=>DB.mesesLabel[m]||m);
-  const data=DB.meses.map(m=>DB.perdidosMes[m]??0);
+  const labels=DB.meses.map(m=>DB.mesesLabel[m]||m), data=DB.meses.map(m=>DB.perdidosMes[m]??0);
   charts['perd']=new Chart(document.getElementById('c-perd'),{type:'bar',
     data:{labels,datasets:[{data,backgroundColor:'#214a4c',borderRadius:6,maxBarThickness:60}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw} leads perdidos`}}},
     scales:{y:{beginAtZero:true,grid:{color:'#f0f2f6'},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:11}}}}}});
 }
-
-// Donut — Por que não fechou consulta (atualiza com filtro)
 function drawConsultaDonut(){
   destroy('mot'); const e=motivosFor();
   if(!e){document.getElementById('wrap-mot').innerHTML='<div class="empty">Sem perdas registradas neste mês.</div>';return;}
@@ -258,8 +291,6 @@ function drawConsultaDonut(){
       plugins:{legend:{position:'right',labels:{boxWidth:11,font:{size:11},padding:8}},
       tooltip:{callbacks:{label:c=>` ${c.label}: ${c.raw} (${Math.round(c.raw/tot*100)}%)`}}}}});
 }
-
-// Donut — Procedimentos - Status (atualiza com filtro)
 function drawProcDonut(){
   destroy('proc'); const s=procStatusFor();
   if(!s){document.getElementById('wrap-proc').innerHTML='<div class="empty">Sem dados de procedimentos neste mês.<br><span style="font-size:.7rem">(Planilha da Meire vai até maio)</span></div>';return;}
@@ -269,8 +300,6 @@ function drawProcDonut(){
     options:{responsive:true,maintainAspectRatio:false,cutout:'58%',
       plugins:{legend:{position:'right',labels:{boxWidth:11,font:{size:11},padding:10}}}}});
 }
-
-// Aba Motivos — barra VERTICAL dos motivos da consulta (atualiza com filtro)
 function drawMotivosBar(){
   destroy('motbar'); const e=motivosFor();
   if(!e){document.getElementById('wrap-motbar').innerHTML='<div class="empty">Sem perdas registradas neste mês.</div>';return;}
@@ -280,8 +309,6 @@ function drawMotivosBar(){
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw} perdas`}}},
     scales:{y:{beginAtZero:true,grid:{color:'#f0f2f6'},ticks:{font:{size:11}}},x:{grid:{display:false},ticks:{font:{size:10}}}}}});
 }
-
-// Aba Motivos — lista de procedimentos (mês + status)
 function drawProcList(){
   const inMes=DB.procLista.filter(p=>mesAtivo==='todos'||p.mkey===mesAtivo);
   const counts={todos:inMes.length}; inMes.forEach(p=>counts[p.status]=(counts[p.status]||0)+1);
@@ -293,6 +320,21 @@ function drawProcList(){
     <div class="pcard"><div class="pcard-top"><span class="pname">${p.nome}</span><span class="bdg ${BDG[p.status]||'bdg-b'}">${p.status}</span></div>
     <div class="pmot">${p.motivo}</div><div class="pmes">${p.mes}/2026</div></div>`).join('')
     || '<div class="empty">Nenhum caso neste filtro.</div>';
+}
+// Aba Consultório — cards por finalidade + tabela por semana
+function drawConsultorio(){
+  const fin=(DB.consultorioFinalidade||{})[mesAtivo]||{};
+  const cards=Object.entries(fin);
+  document.getElementById('cons-cards').innerHTML = cards.length
+    ? cards.map(([cat,n])=>`<div class="conc"><div class="v">${n}</div><div class="l">${cat}</div></div>`).join('')
+    : '<div class="empty" style="grid-column:1/-1">Sem consultas neste mês.</div>';
+  const sem=(DB.consultorioSemana||{})[mesAtivo]||[];
+  const tot=sem.reduce((a,s)=>a+s.qtd,0);
+  document.getElementById('cons-tab').innerHTML = sem.length
+    ? `<table class="ctab"><thead><tr><th>Semana</th><th class="num">Consultas</th></tr></thead><tbody>
+       ${sem.map(s=>`<tr><td>${s.semana}</td><td class="num">${s.qtd}</td></tr>`).join('')}
+       <tr class="tot"><td>Total</td><td class="num">${tot}</td></tr></tbody></table>`
+    : '<div class="empty">Sem consultas neste mês.</div>';
 }
 init();
 </script>
