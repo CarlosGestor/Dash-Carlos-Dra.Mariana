@@ -1,6 +1,6 @@
 {
   "clinica": "Consultório Dra. Mariana",
-  "ultimaAtualizacao": "2026-06-27T12:00:56.290Z",
+  "ultimaAtualizacao": "2026-07-07T12:01:02.819Z",
   "ganhos": [
     {
       "resp": "Consultório Aurora",
@@ -1017,6 +1017,62 @@
       "v": "2026-06-26",
       "c": "2026-06-11",
       "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-29",
+      "c": "2026-06-14",
+      "proc": "Pré natal"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 800,
+      "v": "2026-06-30",
+      "c": "2026-06-15",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-30",
+      "c": "2026-05-22",
+      "proc": "Contracepção"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Sem Dados",
+      "val": 400,
+      "v": "2026-06-30",
+      "c": "2026-03-24",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Indicação",
+      "val": 900,
+      "v": "2026-06-30",
+      "c": "2026-06-15",
+      "proc": "Fertilidade"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 100,
+      "v": "2026-06-30",
+      "c": "2026-05-19",
+      "proc": "Pré natal"
+    },
+    {
+      "resp": "Consultório Aurora",
+      "orig": "Paciente",
+      "val": 650,
+      "v": "2026-06-30",
+      "c": "2026-05-14",
+      "proc": "Contracepção"
     }
   ],
   "marcadas": [
@@ -1220,12 +1276,16 @@
     }
   ],
   "contagemMarcadas": {
-    "totalAtual": 36,
-    "dataAtual": "22/06/2026",
-    "totalAnterior": 33,
-    "dataAnterior": "12/06/2026",
-    "variacao": 3,
+    "totalAtual": 29,
+    "dataAtual": "02/07/2026",
+    "totalAnterior": 36,
+    "dataAnterior": "22/06/2026",
+    "variacao": -7,
     "historico": [
+      {
+        "total": 29,
+        "data": "02/07/2026"
+      },
       {
         "total": 36,
         "data": "22/06/2026"
@@ -1243,13 +1303,13 @@
   "leadsMes": {
     "2026-04": 227,
     "2026-05": 214,
-    "2026-06": 143
+    "2026-06": 158
   },
   "perdidosMes": {
     "2026-03": 21,
     "2026-04": 147,
     "2026-05": 147,
-    "2026-06": 538
+    "2026-06": 541
   },
   "perdidosOrg": {
     "2026-03": {
@@ -1271,17 +1331,18 @@
     },
     "2026-06": {
       "Instagram": 95,
-      "Indicação": 79,
+      "Indicação": 81,
       "Paciente": 25,
-      "Sem Dados": 339
+      "Sem Dados": 340
     }
   },
   "perdidosMotivo": {
     "Spam": 114,
     "Questões de preço": 18,
-    "Sem resposta": 654,
+    "Sem resposta": 656,
     "Mudança de ideia": 28,
     "Não atende plano de saúde": 35,
-    "Não faz parto normal": 4
+    "Não faz parto normal": 4,
+    "Organizar e volta depois": 1
   }
 }
