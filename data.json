@@ -1,466 +1,1460 @@
 {
-  "clinica": "Dashboard Consultório",
+  "clinica": "Dra. Mariana",
   "subtitulo": "Consultório Aurora",
-  "ultimaAtualizacao": "2026-06-17",
+  "ultimaAtualizacao": "2026-07-21",
   "meses": [
+    "2026-02",
     "2026-03",
     "2026-04",
     "2026-05",
-    "2026-06"
+    "2026-06",
+    "2026-07"
   ],
   "mesesLabel": {
-    "2026-03": "Mar",
-    "2026-04": "Abr",
-    "2026-05": "Mai",
-    "2026-06": "Jun"
+    "2026-02": "Fev/26",
+    "2026-03": "Mar/26",
+    "2026-04": "Abr/26",
+    "2026-05": "Mai/26",
+    "2026-06": "Jun/26",
+    "2026-07": "Jul/26"
   },
-  "funil": {
+  "consultas": {
+    "2026-02": {
+      "realizadas": 2,
+      "marcadas": 0,
+      "faturamento": 750.0,
+      "ticketMedio": 375.0,
+      "origem": {
+        "Sem dados": 1,
+        "Indicação": 1
+      },
+      "perfil": {
+        "Presencial": 2
+      },
+      "finalidade": {
+        "Fertilidade": 1,
+        "Contracepção": 1
+      },
+      "pagamento": {
+        "Pix": 2
+      },
+      "semana": [
+        {
+          "semana": "02/02–08/02",
+          "qtd": 1,
+          "valor": 650.0
+        },
+        {
+          "semana": "23/02–01/03",
+          "qtd": 1,
+          "valor": 100.0
+        }
+      ],
+      "faturamentoPorFinalidade": {
+        "Fertilidade": 650.0,
+        "Contracepção": 100.0
+      }
+    },
     "2026-03": {
-      "entram": null,
-      "novas": 10,
-      "enviados": 8,
-      "fecha": 1
+      "realizadas": 15,
+      "marcadas": 0,
+      "faturamento": 10380.0,
+      "ticketMedio": 692.0,
+      "origem": {
+        "Sem dados": 8,
+        "Paciente": 5,
+        "Instagram": 1,
+        "Indicação": 1
+      },
+      "perfil": {
+        "Presencial": 15
+      },
+      "finalidade": {
+        "Fertilidade": 8,
+        "Contracepção": 7
+      },
+      "pagamento": {
+        "Pix": 15
+      },
+      "semana": [
+        {
+          "semana": "02/03–08/03",
+          "qtd": 1,
+          "valor": 500.0
+        },
+        {
+          "semana": "09/03–15/03",
+          "qtd": 6,
+          "valor": 4230.0
+        },
+        {
+          "semana": "16/03–22/03",
+          "qtd": 4,
+          "valor": 2900.0
+        },
+        {
+          "semana": "23/03–29/03",
+          "qtd": 2,
+          "valor": 1300.0
+        },
+        {
+          "semana": "30/03–05/04",
+          "qtd": 2,
+          "valor": 1450.0
+        }
+      ],
+      "faturamentoPorFinalidade": {
+        "Fertilidade": 5830.0,
+        "Contracepção": 4550.0
+      }
     },
     "2026-04": {
-      "entram": 223,
-      "novas": 10,
-      "enviados": 6,
-      "fecha": 1
+      "realizadas": 29,
+      "marcadas": 0,
+      "faturamento": 21200.0,
+      "ticketMedio": 731.03,
+      "origem": {
+        "Paciente": 15,
+        "Indicação": 13,
+        "Instagram": 1
+      },
+      "perfil": {
+        "Presencial": 29
+      },
+      "finalidade": {
+        "Fertilidade": 13,
+        "Contracepção": 12,
+        "Pré natal": 4
+      },
+      "pagamento": {
+        "Pix": 29
+      },
+      "semana": [
+        {
+          "semana": "30/03–05/04",
+          "qtd": 1,
+          "valor": 2500.0
+        },
+        {
+          "semana": "06/04–12/04",
+          "qtd": 14,
+          "valor": 8700.0
+        },
+        {
+          "semana": "13/04–19/04",
+          "qtd": 10,
+          "valor": 7100.0
+        },
+        {
+          "semana": "20/04–26/04",
+          "qtd": 3,
+          "valor": 2100.0
+        },
+        {
+          "semana": "27/04–03/05",
+          "qtd": 1,
+          "valor": 800.0
+        }
+      ],
+      "faturamentoPorFinalidade": {
+        "Fertilidade": 9950.0,
+        "Contracepção": 8650.0,
+        "Pré natal": 2600.0
+      }
     },
     "2026-05": {
-      "entram": 214,
-      "novas": 16,
-      "enviados": 7,
-      "fecha": 1
+      "realizadas": 37,
+      "marcadas": 0,
+      "faturamento": 26200.0,
+      "ticketMedio": 708.11,
+      "origem": {
+        "Indicação": 18,
+        "Paciente": 15,
+        "Instagram": 4
+      },
+      "perfil": {
+        "Presencial": 34,
+        "Online": 3
+      },
+      "finalidade": {
+        "Fertilidade": 23,
+        "Contracepção": 14
+      },
+      "pagamento": {
+        "Pix": 37
+      },
+      "semana": [
+        {
+          "semana": "04/05–10/05",
+          "qtd": 7,
+          "valor": 4850.0
+        },
+        {
+          "semana": "11/05–17/05",
+          "qtd": 13,
+          "valor": 8950.0
+        },
+        {
+          "semana": "18/05–24/05",
+          "qtd": 11,
+          "valor": 7900.0
+        },
+        {
+          "semana": "25/05–31/05",
+          "qtd": 6,
+          "valor": 4500.0
+        }
+      ],
+      "faturamentoPorFinalidade": {
+        "Fertilidade": 17100.0,
+        "Contracepção": 9100.0
+      }
     },
     "2026-06": {
-      "entram": 101,
-      "novas": 8,
-      "enviados": null,
-      "fecha": null
+      "realizadas": 50,
+      "marcadas": 36,
+      "faturamento": 33805.0,
+      "ticketMedio": 676.1,
+      "origem": {
+        "Paciente": 28,
+        "Indicação": 18,
+        "Sem dados": 2,
+        "Instagram": 2
+      },
+      "perfil": {
+        "Presencial": 48,
+        "Online": 2
+      },
+      "finalidade": {
+        "Contracepção": 26,
+        "Fertilidade": 20,
+        "Pré natal": 4
+      },
+      "pagamento": {
+        "Pix": 48,
+        "Link": 2
+      },
+      "semana": [
+        {
+          "semana": "01/06–07/06",
+          "qtd": 9,
+          "valor": 6200.0
+        },
+        {
+          "semana": "08/06–14/06",
+          "qtd": 16,
+          "valor": 10815.0
+        },
+        {
+          "semana": "15/06–21/06",
+          "qtd": 11,
+          "valor": 7490.0
+        },
+        {
+          "semana": "22/06–28/06",
+          "qtd": 10,
+          "valor": 7100.0
+        },
+        {
+          "semana": "29/06–05/07",
+          "qtd": 4,
+          "valor": 2200.0
+        }
+      ],
+      "faturamentoPorFinalidade": {
+        "Contracepção": 17065.0,
+        "Fertilidade": 14540.0,
+        "Pré natal": 2200.0
+      }
+    },
+    "2026-07": {
+      "realizadas": 27,
+      "marcadas": 30,
+      "faturamento": 19830.0,
+      "ticketMedio": 734.44,
+      "origem": {
+        "Paciente": 11,
+        "Indicação": 10,
+        "Instagram": 5,
+        "Sem dados": 1
+      },
+      "perfil": {
+        "Presencial": 22,
+        "Online": 5
+      },
+      "finalidade": {
+        "Fertilidade": 11,
+        "Contracepção": 9,
+        "Pré natal": 7
+      },
+      "pagamento": {
+        "Pix": 27
+      },
+      "semana": [
+        {
+          "semana": "29/06–05/07",
+          "qtd": 4,
+          "valor": 3230.0
+        },
+        {
+          "semana": "06/07–12/07",
+          "qtd": 8,
+          "valor": 6100.0
+        },
+        {
+          "semana": "13/07–19/07",
+          "qtd": 9,
+          "valor": 6550.0
+        },
+        {
+          "semana": "20/07–26/07",
+          "qtd": 6,
+          "valor": 3950.0
+        }
+      ],
+      "faturamentoPorFinalidade": {
+        "Fertilidade": 8830.0,
+        "Contracepção": 5500.0,
+        "Pré natal": 5500.0
+      }
+    },
+    "todos": {
+      "realizadas": 160,
+      "marcadas": 66,
+      "faturamento": 112165.0,
+      "ticketMedio": 701.03,
+      "origem": {
+        "Paciente": 74,
+        "Indicação": 61,
+        "Instagram": 13,
+        "Sem dados": 12
+      },
+      "perfil": {
+        "Presencial": 150,
+        "Online": 10
+      },
+      "finalidade": {
+        "Fertilidade": 76,
+        "Contracepção": 69,
+        "Pré natal": 15
+      },
+      "pagamento": {
+        "Pix": 158,
+        "Link": 2
+      },
+      "semana": [
+        {
+          "semana": "02/02–08/02",
+          "qtd": 1,
+          "valor": 650.0
+        },
+        {
+          "semana": "23/02–01/03",
+          "qtd": 1,
+          "valor": 100.0
+        },
+        {
+          "semana": "02/03–08/03",
+          "qtd": 1,
+          "valor": 500.0
+        },
+        {
+          "semana": "09/03–15/03",
+          "qtd": 6,
+          "valor": 4230.0
+        },
+        {
+          "semana": "16/03–22/03",
+          "qtd": 4,
+          "valor": 2900.0
+        },
+        {
+          "semana": "23/03–29/03",
+          "qtd": 2,
+          "valor": 1300.0
+        },
+        {
+          "semana": "30/03–05/04",
+          "qtd": 3,
+          "valor": 3950.0
+        },
+        {
+          "semana": "06/04–12/04",
+          "qtd": 14,
+          "valor": 8700.0
+        },
+        {
+          "semana": "13/04–19/04",
+          "qtd": 10,
+          "valor": 7100.0
+        },
+        {
+          "semana": "20/04–26/04",
+          "qtd": 3,
+          "valor": 2100.0
+        },
+        {
+          "semana": "27/04–03/05",
+          "qtd": 1,
+          "valor": 800.0
+        },
+        {
+          "semana": "04/05–10/05",
+          "qtd": 7,
+          "valor": 4850.0
+        },
+        {
+          "semana": "11/05–17/05",
+          "qtd": 13,
+          "valor": 8950.0
+        },
+        {
+          "semana": "18/05–24/05",
+          "qtd": 11,
+          "valor": 7900.0
+        },
+        {
+          "semana": "25/05–31/05",
+          "qtd": 6,
+          "valor": 4500.0
+        },
+        {
+          "semana": "01/06–07/06",
+          "qtd": 9,
+          "valor": 6200.0
+        },
+        {
+          "semana": "08/06–14/06",
+          "qtd": 16,
+          "valor": 10815.0
+        },
+        {
+          "semana": "15/06–21/06",
+          "qtd": 11,
+          "valor": 7490.0
+        },
+        {
+          "semana": "22/06–28/06",
+          "qtd": 10,
+          "valor": 7100.0
+        },
+        {
+          "semana": "29/06–05/07",
+          "qtd": 8,
+          "valor": 5430.0
+        },
+        {
+          "semana": "06/07–12/07",
+          "qtd": 8,
+          "valor": 6100.0
+        },
+        {
+          "semana": "13/07–19/07",
+          "qtd": 9,
+          "valor": 6550.0
+        },
+        {
+          "semana": "20/07–26/07",
+          "qtd": 6,
+          "valor": 3950.0
+        }
+      ],
+      "faturamentoPorFinalidade": {
+        "Fertilidade": 56900.0,
+        "Contracepção": 44965.0,
+        "Pré natal": 10300.0
+      }
+    }
+  },
+  "perdas": {
+    "2026-02": {
+      "total": 0,
+      "origem": {},
+      "motivo": {},
+      "finalidade": {},
+      "semana": []
+    },
+    "2026-03": {
+      "total": 21,
+      "origem": {
+        "Sem dados": 20,
+        "Instagram": 1
+      },
+      "motivo": {
+        "Sem resposta": 11,
+        "Spam": 7,
+        "Questões de preço": 3
+      },
+      "finalidade": {
+        "Sem dados": 20,
+        "Pré natal": 1
+      },
+      "semana": [
+        {
+          "semana": "23/03–29/03",
+          "qtd": 8
+        },
+        {
+          "semana": "30/03–05/04",
+          "qtd": 13
+        }
+      ]
+    },
+    "2026-04": {
+      "total": 148,
+      "origem": {
+        "Sem dados": 86,
+        "Instagram": 36,
+        "Indicação": 17,
+        "Paciente": 8,
+        "Outros": 1
+      },
+      "motivo": {
+        "Sem resposta": 109,
+        "Spam": 21,
+        "Mudança de ideia": 13,
+        "Questões de preço": 4,
+        "Sem dados": 1
+      },
+      "finalidade": {
+        "Sem dados": 85,
+        "Contracepção": 36,
+        "Fertilidade": 19,
+        "Pré natal": 8
+      },
+      "semana": [
+        {
+          "semana": "30/03–05/04",
+          "qtd": 42
+        },
+        {
+          "semana": "06/04–12/04",
+          "qtd": 60
+        },
+        {
+          "semana": "20/04–26/04",
+          "qtd": 5
+        },
+        {
+          "semana": "27/04–03/05",
+          "qtd": 40
+        }
+      ]
+    },
+    "2026-05": {
+      "total": 147,
+      "origem": {
+        "Instagram": 47,
+        "Indicação": 44,
+        "Sem dados": 43,
+        "Paciente": 13
+      },
+      "motivo": {
+        "Sem resposta": 131,
+        "Spam": 14,
+        "Questões de preço": 1,
+        "Mudança de ideia": 1
+      },
+      "finalidade": {
+        "Fertilidade": 41,
+        "Sem dados": 39,
+        "Pré natal": 34,
+        "Contracepção": 33
+      },
+      "semana": [
+        {
+          "semana": "04/05–10/05",
+          "qtd": 31
+        },
+        {
+          "semana": "11/05–17/05",
+          "qtd": 6
+        },
+        {
+          "semana": "18/05–24/05",
+          "qtd": 108
+        },
+        {
+          "semana": "25/05–31/05",
+          "qtd": 2
+        }
+      ]
+    },
+    "2026-06": {
+      "total": 541,
+      "origem": {
+        "Sem dados": 340,
+        "Instagram": 95,
+        "Indicação": 81,
+        "Paciente": 25
+      },
+      "motivo": {
+        "Sem resposta": 405,
+        "Spam": 72,
+        "Não atende plano de saúde": 35,
+        "Mudança de ideia": 14,
+        "Questões de preço": 10,
+        "Não faz parto normal": 4,
+        "Organizar e volta depois": 1
+      },
+      "finalidade": {
+        "Sem dados": 332,
+        "Fertilidade": 95,
+        "Pré natal": 67,
+        "Contracepção": 47
+      },
+      "semana": [
+        {
+          "semana": "01/06–07/06",
+          "qtd": 49
+        },
+        {
+          "semana": "08/06–14/06",
+          "qtd": 212
+        },
+        {
+          "semana": "15/06–21/06",
+          "qtd": 251
+        },
+        {
+          "semana": "22/06–28/06",
+          "qtd": 26
+        },
+        {
+          "semana": "29/06–05/07",
+          "qtd": 3
+        }
+      ]
+    },
+    "2026-07": {
+      "total": 99,
+      "origem": {
+        "Indicação": 33,
+        "Sem dados": 29,
+        "Instagram": 28,
+        "Paciente": 9
+      },
+      "motivo": {
+        "Sem resposta": 81,
+        "Não atende plano de saúde": 7,
+        "Spam": 6,
+        "Não faz parto normal": 3,
+        "Questões de preço": 1,
+        "Organizar e volta depois": 1
+      },
+      "finalidade": {
+        "Fertilidade": 40,
+        "Sem dados": 26,
+        "Pré natal": 18,
+        "Contracepção": 15
+      },
+      "semana": [
+        {
+          "semana": "29/06–05/07",
+          "qtd": 19
+        },
+        {
+          "semana": "06/07–12/07",
+          "qtd": 30
+        },
+        {
+          "semana": "13/07–19/07",
+          "qtd": 32
+        },
+        {
+          "semana": "20/07–26/07",
+          "qtd": 18
+        }
+      ]
+    },
+    "todos": {
+      "total": 956,
+      "origem": {
+        "Sem dados": 518,
+        "Instagram": 207,
+        "Indicação": 175,
+        "Paciente": 55,
+        "Outros": 1
+      },
+      "motivo": {
+        "Sem resposta": 737,
+        "Spam": 120,
+        "Não atende plano de saúde": 42,
+        "Mudança de ideia": 28,
+        "Questões de preço": 19,
+        "Não faz parto normal": 7,
+        "Organizar e volta depois": 2,
+        "Sem dados": 1
+      },
+      "finalidade": {
+        "Sem dados": 502,
+        "Fertilidade": 195,
+        "Contracepção": 131,
+        "Pré natal": 128
+      },
+      "semana": [
+        {
+          "semana": "23/03–29/03",
+          "qtd": 8
+        },
+        {
+          "semana": "30/03–05/04",
+          "qtd": 55
+        },
+        {
+          "semana": "06/04–12/04",
+          "qtd": 60
+        },
+        {
+          "semana": "20/04–26/04",
+          "qtd": 5
+        },
+        {
+          "semana": "27/04–03/05",
+          "qtd": 40
+        },
+        {
+          "semana": "04/05–10/05",
+          "qtd": 31
+        },
+        {
+          "semana": "11/05–17/05",
+          "qtd": 6
+        },
+        {
+          "semana": "18/05–24/05",
+          "qtd": 108
+        },
+        {
+          "semana": "25/05–31/05",
+          "qtd": 2
+        },
+        {
+          "semana": "01/06–07/06",
+          "qtd": 49
+        },
+        {
+          "semana": "08/06–14/06",
+          "qtd": 212
+        },
+        {
+          "semana": "15/06–21/06",
+          "qtd": 251
+        },
+        {
+          "semana": "22/06–28/06",
+          "qtd": 26
+        },
+        {
+          "semana": "29/06–05/07",
+          "qtd": 22
+        },
+        {
+          "semana": "06/07–12/07",
+          "qtd": 30
+        },
+        {
+          "semana": "13/07–19/07",
+          "qtd": 32
+        },
+        {
+          "semana": "20/07–26/07",
+          "qtd": 18
+        }
+      ]
+    }
+  },
+  "leads": {
+    "2026-02": {
+      "total": 0,
+      "origem": {}
+    },
+    "2026-03": {
+      "total": 1,
+      "origem": {}
+    },
+    "2026-04": {
+      "total": 227,
+      "origem": {}
+    },
+    "2026-05": {
+      "total": 214,
+      "origem": {}
+    },
+    "2026-06": {
+      "total": 158,
+      "origem": {}
+    },
+    "2026-07": {
+      "total": 109,
+      "origem": {}
+    },
+    "todos": {
+      "total": 709,
+      "origem": {}
+    }
+  },
+  "tratamento": {
+    "2026-02": {
+      "enviados": 0,
+      "fechados": 0,
+      "status": {},
+      "lista": []
+    },
+    "2026-03": {
+      "enviados": 8,
+      "fechados": 1,
+      "status": {
+        "Atenção": 5,
+        "Em Aberto": 2,
+        "Ganho": 1
+      },
+      "lista": [
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Lorrayne Machado Cunha / Luiz Felipe",
+          "status": "Atenção",
+          "motivo": "Programação: iniciar estímulo em agosto e realizar FIV em setembro/2026."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "ackeline Carvalho / Danilo",
+          "status": "Atenção",
+          "motivo": "Programação: fechar tratamento em setembro/2026."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Patricia Rabelo Silva / Rafael",
+          "status": "Ganho",
+          "motivo": "Fechou Plano Misto em março."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Paula Taira Horiuti / Cleber",
+          "status": "Em Aberto",
+          "motivo": "Farão namoro programado primeiro; se não houver sucesso, seguirão para FIV."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Tauanna Maronezi / Lara",
+          "status": "Em Aberto",
+          "motivo": "Estão se organizando financeiramente para fechar no próximo ano."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Barbara Belicio Martins / Wellington",
+          "status": "Atenção",
+          "motivo": "Caso de transferência embrionária; pretende se programar para ir a Goiânia."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Nathalia Alves dos Santos",
+          "status": "Atenção",
+          "motivo": "Enviar mensagem para atualização."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Gabriela Teixeira de Oliveira / José Carlos",
+          "status": "Atenção",
+          "motivo": "Programação para fechar 2 FIVs em agosto/2026."
+        }
+      ]
+    },
+    "2026-04": {
+      "enviados": 6,
+      "fechados": 1,
+      "status": {
+        "Atenção": 2,
+        "Perdido": 2,
+        "Ganho": 1,
+        "Em Aberto": 1
+      },
+      "lista": [
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Josimar Rodrigues da Silva Knapp / Sidnei",
+          "status": "Atenção",
+          "motivo": "Enviar mensagem para atualização."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Germana Crystina Sena Lopes / Gustavo",
+          "status": "Ganho",
+          "motivo": "Fechou 2 FIVs em abril."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Andrielly Carvalho Nunes / Diego",
+          "status": "Perdido",
+          "motivo": "Considerou os valores elevados após reajuste."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Lorena Viana de Campos / Sandro",
+          "status": "Perdido",
+          "motivo": "Considerou os valores elevados após reajuste."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Danielle Neres Lima",
+          "status": "Em Aberto",
+          "motivo": "Orçamento enviado; realizado novo contato sem retorno."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Jeronima Karolina Manso / Ernane",
+          "status": "Atenção",
+          "motivo": "Ernane irá repetir os exames em julho/2026 para reavaliação do espermograma."
+        }
+      ]
+    },
+    "2026-05": {
+      "enviados": 7,
+      "fechados": 1,
+      "status": {
+        "Em Aberto": 4,
+        "Perdido": 1,
+        "Atenção": 1,
+        "Ganho": 1
+      },
+      "lista": [
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Lais Aparecida Pereira da Silva / Alessandro",
+          "status": "Perdido",
+          "motivo": "Engravidou naturalmente."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Bruna Capeli / Thiago",
+          "status": "Atenção",
+          "motivo": "Vai fechar em setembro, pois pretende realizar o tratamento em fevereiro (vigência contratual de 6 meses)."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Renata Vian Marttinez",
+          "status": "Em Aberto",
+          "motivo": "Orçamento enviado; realizado novo contato sem retorno."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Lilliany Dias Pinto Luz / Marlos",
+          "status": "Em Aberto",
+          "motivo": "Orçamento enviado; realizado novo contato sem retorno."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Naya Maria Moraes Carvalho / Eduardo",
+          "status": "Em Aberto",
+          "motivo": "Orçamento enviado; realizado novo contato sem retorno."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Ana Marina Sousa Lopes",
+          "status": "Em Aberto",
+          "motivo": "Caso de transferência embrionária."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Glauciene Cruvinel Pereira / Ary Alves",
+          "status": "Ganho",
+          "motivo": "Fechou 2 FIVs em junho/2026."
+        }
+      ]
+    },
+    "2026-06": {
+      "enviados": 12,
+      "fechados": 2,
+      "status": {
+        "Em Aberto": 9,
+        "Ganho": 2,
+        "Atenção": 1
+      },
+      "lista": [
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "ANA MARINA SOUSA LOPES",
+          "status": "Atenção",
+          "motivo": "VAI FECHAR TEC AVULSA, JÁ ENVIEI O CONTRATO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "GLAUCIENE CRUVINEL PEREIRA",
+          "status": "Ganho",
+          "motivo": "FECHOU 1 FIV NO MÊS06/2026"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "RUTH BORGES LINHARES MOURA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "PATRICIA FERNANDES DE ARAUJO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "FERNANDA BIZINOTO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "LARYSSA CRISTINA SOUZA PEREIRA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "GISELLE DE LIMA PAIXAO E SILVA",
+          "status": "Ganho",
+          "motivo": "FECHOU 1 FIV NO MÊS06/2026"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "CELIDA VALMIRA FRANCO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "NATALIA QUEIROZ",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "LHUANNA MARIA BARBOSA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "KAMILLA MENDONÇA MOTA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "GILIENE GONCALVES DA SILVA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        }
+      ]
+    },
+    "2026-07": {
+      "enviados": 3,
+      "fechados": 0,
+      "status": {
+        "Em Aberto": 3
+      },
+      "lista": [
+        {
+          "mes": "Jul/26",
+          "mkey": "2026-07",
+          "nome": "NATHALYA LEMES DE FREITAS BOTELHO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jul/26",
+          "mkey": "2026-07",
+          "nome": "SYLVIA DE SOUSA GENARO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jul/26",
+          "mkey": "2026-07",
+          "nome": "EDINEIDE FATIMA DE SOUZA GARRET",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        }
+      ]
+    },
+    "todos": {
+      "enviados": 36,
+      "fechados": 5,
+      "status": {
+        "Em Aberto": 19,
+        "Atenção": 9,
+        "Ganho": 5,
+        "Perdido": 3
+      },
+      "lista": [
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Lorrayne Machado Cunha / Luiz Felipe",
+          "status": "Atenção",
+          "motivo": "Programação: iniciar estímulo em agosto e realizar FIV em setembro/2026."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "ackeline Carvalho / Danilo",
+          "status": "Atenção",
+          "motivo": "Programação: fechar tratamento em setembro/2026."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Patricia Rabelo Silva / Rafael",
+          "status": "Ganho",
+          "motivo": "Fechou Plano Misto em março."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Paula Taira Horiuti / Cleber",
+          "status": "Em Aberto",
+          "motivo": "Farão namoro programado primeiro; se não houver sucesso, seguirão para FIV."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Tauanna Maronezi / Lara",
+          "status": "Em Aberto",
+          "motivo": "Estão se organizando financeiramente para fechar no próximo ano."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Barbara Belicio Martins / Wellington",
+          "status": "Atenção",
+          "motivo": "Caso de transferência embrionária; pretende se programar para ir a Goiânia."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Nathalia Alves dos Santos",
+          "status": "Atenção",
+          "motivo": "Enviar mensagem para atualização."
+        },
+        {
+          "mes": "Mar/26",
+          "mkey": "2026-03",
+          "nome": "Gabriela Teixeira de Oliveira / José Carlos",
+          "status": "Atenção",
+          "motivo": "Programação para fechar 2 FIVs em agosto/2026."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Josimar Rodrigues da Silva Knapp / Sidnei",
+          "status": "Atenção",
+          "motivo": "Enviar mensagem para atualização."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Germana Crystina Sena Lopes / Gustavo",
+          "status": "Ganho",
+          "motivo": "Fechou 2 FIVs em abril."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Andrielly Carvalho Nunes / Diego",
+          "status": "Perdido",
+          "motivo": "Considerou os valores elevados após reajuste."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Lorena Viana de Campos / Sandro",
+          "status": "Perdido",
+          "motivo": "Considerou os valores elevados após reajuste."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Danielle Neres Lima",
+          "status": "Em Aberto",
+          "motivo": "Orçamento enviado; realizado novo contato sem retorno."
+        },
+        {
+          "mes": "Abr/26",
+          "mkey": "2026-04",
+          "nome": "Jeronima Karolina Manso / Ernane",
+          "status": "Atenção",
+          "motivo": "Ernane irá repetir os exames em julho/2026 para reavaliação do espermograma."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Lais Aparecida Pereira da Silva / Alessandro",
+          "status": "Perdido",
+          "motivo": "Engravidou naturalmente."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Bruna Capeli / Thiago",
+          "status": "Atenção",
+          "motivo": "Vai fechar em setembro, pois pretende realizar o tratamento em fevereiro (vigência contratual de 6 meses)."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Renata Vian Marttinez",
+          "status": "Em Aberto",
+          "motivo": "Orçamento enviado; realizado novo contato sem retorno."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Lilliany Dias Pinto Luz / Marlos",
+          "status": "Em Aberto",
+          "motivo": "Orçamento enviado; realizado novo contato sem retorno."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Naya Maria Moraes Carvalho / Eduardo",
+          "status": "Em Aberto",
+          "motivo": "Orçamento enviado; realizado novo contato sem retorno."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Ana Marina Sousa Lopes",
+          "status": "Em Aberto",
+          "motivo": "Caso de transferência embrionária."
+        },
+        {
+          "mes": "Mai/26",
+          "mkey": "2026-05",
+          "nome": "Glauciene Cruvinel Pereira / Ary Alves",
+          "status": "Ganho",
+          "motivo": "Fechou 2 FIVs em junho/2026."
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "ANA MARINA SOUSA LOPES",
+          "status": "Atenção",
+          "motivo": "VAI FECHAR TEC AVULSA, JÁ ENVIEI O CONTRATO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "GLAUCIENE CRUVINEL PEREIRA",
+          "status": "Ganho",
+          "motivo": "FECHOU 1 FIV NO MÊS06/2026"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "RUTH BORGES LINHARES MOURA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "PATRICIA FERNANDES DE ARAUJO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "FERNANDA BIZINOTO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "LARYSSA CRISTINA SOUZA PEREIRA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "GISELLE DE LIMA PAIXAO E SILVA",
+          "status": "Ganho",
+          "motivo": "FECHOU 1 FIV NO MÊS06/2026"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "CELIDA VALMIRA FRANCO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "NATALIA QUEIROZ",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "LHUANNA MARIA BARBOSA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "KAMILLA MENDONÇA MOTA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jun/26",
+          "mkey": "2026-06",
+          "nome": "GILIENE GONCALVES DA SILVA",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jul/26",
+          "mkey": "2026-07",
+          "nome": "NATHALYA LEMES DE FREITAS BOTELHO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jul/26",
+          "mkey": "2026-07",
+          "nome": "SYLVIA DE SOUSA GENARO",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        },
+        {
+          "mes": "Jul/26",
+          "mkey": "2026-07",
+          "nome": "EDINEIDE FATIMA DE SOUZA GARRET",
+          "status": "Em Aberto",
+          "motivo": "NEGOCIAÇÃO"
+        }
+      ]
     }
   },
   "totais": {
-    "entram": 538,
-    "novas": 44,
-    "enviados": 21,
-    "fecha": 3
+    "realizadas": 160,
+    "marcadas": 66,
+    "faturamento": 112165.0,
+    "ticketMedio": 701.03,
+    "perdas": 956,
+    "leads": 709,
+    "enviadosMeire": 36,
+    "procFechados": 5
   },
-  "perdidosBase": "criacao",
-  "perdidosMes": {
-    "2026-03": 236,
-    "2026-04": 196,
-    "2026-05": 160,
-    "2026-06": 73
-  },
-  "perdidosMesPerda": {
-    "2026-03": 21,
-    "2026-04": 147,
-    "2026-05": 147,
-    "2026-06": 416
-  },
-  "perdidosMotivo": {
-    "Sem resposta": 576,
-    "Spam": 83,
-    "Não atende plano": 29,
-    "Mudança de ideia": 25,
-    "Questões de preço": 15,
-    "Não faz parto normal": 3
-  },
-  "perdidosMotivoMes": {
-    "2026-02": {
-      "Sem resposta": 51,
-      "Spam": 11,
-      "Não atende plano": 2,
-      "Mudança de ideia": 2
+  "serie": [
+    {
+      "mes": "2026-02",
+      "label": "Fev/26",
+      "faturamento": 750.0,
+      "realizadas": 2,
+      "marcadas": 0,
+      "perdas": 0,
+      "leads": 0,
+      "ticketMedio": 375.0,
+      "enviados": 0,
+      "fechados": 0
     },
-    "2026-03": {
-      "Sem resposta": 192,
-      "Spam": 30,
-      "Questões de preço": 5,
-      "Mudança de ideia": 5,
-      "Não atende plano": 3,
-      "Não faz parto normal": 1
+    {
+      "mes": "2026-03",
+      "label": "Mar/26",
+      "faturamento": 10380.0,
+      "realizadas": 15,
+      "marcadas": 0,
+      "perdas": 21,
+      "leads": 1,
+      "ticketMedio": 692.0,
+      "enviados": 8,
+      "fechados": 1
     },
-    "2026-04": {
-      "Sem resposta": 138,
-      "Spam": 20,
-      "Mudança de ideia": 15,
-      "Não atende plano": 14,
-      "Questões de preço": 8,
-      "Não faz parto normal": 1
+    {
+      "mes": "2026-04",
+      "label": "Abr/26",
+      "faturamento": 21200.0,
+      "realizadas": 29,
+      "marcadas": 0,
+      "perdas": 148,
+      "leads": 227,
+      "ticketMedio": 731.03,
+      "enviados": 6,
+      "fechados": 1
     },
-    "2026-05": {
-      "Sem resposta": 138,
-      "Spam": 18,
-      "Mudança de ideia": 2,
-      "Não atende plano": 1,
-      "Questões de preço": 1
+    {
+      "mes": "2026-05",
+      "label": "Mai/26",
+      "faturamento": 26200.0,
+      "realizadas": 37,
+      "marcadas": 0,
+      "perdas": 147,
+      "leads": 214,
+      "ticketMedio": 708.11,
+      "enviados": 7,
+      "fechados": 1
     },
-    "2026-06": {
-      "Sem resposta": 57,
-      "Não atende plano": 9,
-      "Spam": 4,
-      "Mudança de ideia": 1,
-      "Questões de preço": 1,
-      "Não faz parto normal": 1
+    {
+      "mes": "2026-06",
+      "label": "Jun/26",
+      "faturamento": 33805.0,
+      "realizadas": 50,
+      "marcadas": 36,
+      "perdas": 541,
+      "leads": 158,
+      "ticketMedio": 676.1,
+      "enviados": 12,
+      "fechados": 2
+    },
+    {
+      "mes": "2026-07",
+      "label": "Jul/26",
+      "faturamento": 19830.0,
+      "realizadas": 27,
+      "marcadas": 30,
+      "perdas": 99,
+      "leads": 109,
+      "ticketMedio": 734.44,
+      "enviados": 3,
+      "fechados": 0
     }
-  },
-  "procStatus": {
-    "Atenção": 8,
-    "Em Aberto": 7,
-    "Ganho": 3,
-    "Perdido": 3
-  },
-  "procLista": [
-    {
-      "mes": "Março",
-      "mkey": "2026-03",
-      "nome": "Lorrayne Machado Cunha / Luiz Felipe",
-      "status": "Em Aberto",
-      "motivo": "Programação: iniciar estímulo em agosto e realizar FIV em setembro/2026."
-    },
-    {
-      "mes": "Março",
-      "mkey": "2026-03",
-      "nome": "ackeline Carvalho / Danilo",
-      "status": "Em Aberto",
-      "motivo": "Programação: fechar tratamento em setembro/2026."
-    },
-    {
-      "mes": "Março",
-      "mkey": "2026-03",
-      "nome": "Patricia Rabelo Silva / Rafael",
-      "status": "Ganho",
-      "motivo": "Fechou Plano Misto em março."
-    },
-    {
-      "mes": "Março",
-      "mkey": "2026-03",
-      "nome": "Paula Taira Horiuti / Cleber",
-      "status": "Atenção",
-      "motivo": "Farão namoro programado primeiro; se não houver sucesso, seguirão para FIV."
-    },
-    {
-      "mes": "Março",
-      "mkey": "2026-03",
-      "nome": "Tauanna Maronezi / Lara",
-      "status": "Em Aberto",
-      "motivo": "Estão se organizando financeiramente para fechar no próximo ano."
-    },
-    {
-      "mes": "Março",
-      "mkey": "2026-03",
-      "nome": "Barbara Belicio Martins / Wellington",
-      "status": "Atenção",
-      "motivo": "Caso de transferência embrionária; pretende se programar para ir a Goiânia."
-    },
-    {
-      "mes": "Março",
-      "mkey": "2026-03",
-      "nome": "Nathalia Alves dos Santos",
-      "status": "Atenção",
-      "motivo": "Enviar mensagem para atualização."
-    },
-    {
-      "mes": "Março",
-      "mkey": "2026-03",
-      "nome": "Gabriela Teixeira de Oliveira / José Carlos",
-      "status": "Em Aberto",
-      "motivo": "Programação para fechar 2 FIVs em agosto/2026."
-    },
-    {
-      "mes": "Abril",
-      "mkey": "2026-04",
-      "nome": "Josimar Rodrigues da Silva Knapp / Sidnei",
-      "status": "Atenção",
-      "motivo": "Enviar mensagem para atualização."
-    },
-    {
-      "mes": "Abril",
-      "mkey": "2026-04",
-      "nome": "Germana Crystina Sena Lopes / Gustavo",
-      "status": "Ganho",
-      "motivo": "Fechou 2 FIVs em abril."
-    },
-    {
-      "mes": "Abril",
-      "mkey": "2026-04",
-      "nome": "Andrielly Carvalho Nunes / Diego",
-      "status": "Perdido",
-      "motivo": "Considerou os valores elevados após reajuste."
-    },
-    {
-      "mes": "Abril",
-      "mkey": "2026-04",
-      "nome": "Lorena Viana de Campos / Sandro",
-      "status": "Perdido",
-      "motivo": "Considerou os valores elevados após reajuste."
-    },
-    {
-      "mes": "Abril",
-      "mkey": "2026-04",
-      "nome": "Danielle Neres Lima",
-      "status": "Atenção",
-      "motivo": "Orçamento enviado; realizado novo contato sem retorno."
-    },
-    {
-      "mes": "Abril",
-      "mkey": "2026-04",
-      "nome": "Jeronima Karolina Manso / Ernane",
-      "status": "Em Aberto",
-      "motivo": "Ernane irá repetir os exames em julho/2026 para reavaliação do espermograma."
-    },
-    {
-      "mes": "Maio",
-      "mkey": "2026-05",
-      "nome": "Lais Aparecida Pereira da Silva / Alessandro",
-      "status": "Perdido",
-      "motivo": "Engravidou naturalmente."
-    },
-    {
-      "mes": "Maio",
-      "mkey": "2026-05",
-      "nome": "Bruna Capeli / Thiago",
-      "status": "Em Aberto",
-      "motivo": "Vai fechar em setembro, pois pretende realizar o tratamento em fevereiro (vigência contratual de 6 meses)."
-    },
-    {
-      "mes": "Maio",
-      "mkey": "2026-05",
-      "nome": "Renata Vian Marttinez",
-      "status": "Atenção",
-      "motivo": "Orçamento enviado; realizado novo contato sem retorno."
-    },
-    {
-      "mes": "Maio",
-      "mkey": "2026-05",
-      "nome": "Lilliany Dias Pinto Luz / Marlos",
-      "status": "Atenção",
-      "motivo": "Orçamento enviado; realizado novo contato sem retorno."
-    },
-    {
-      "mes": "Maio",
-      "mkey": "2026-05",
-      "nome": "Naya Maria Moraes Carvalho / Eduardo",
-      "status": "Atenção",
-      "motivo": "Orçamento enviado; realizado novo contato sem retorno."
-    },
-    {
-      "mes": "Maio",
-      "mkey": "2026-05",
-      "nome": "Ana Marina Sousa Lopes",
-      "status": "Em Aberto",
-      "motivo": "Caso de transferência embrionária."
-    },
-    {
-      "mes": "Maio",
-      "mkey": "2026-05",
-      "nome": "Glauciene Cruvinel Pereira / Ary Alves",
-      "status": "Ganho",
-      "motivo": "Fechou 2 FIVs em junho/2026."
-    }
-  ],
-  "consultorioTotal": 430,
-  "consultorioFinalidade": {
-    "todos": {
-      "Pré natal": 256,
-      "Ginecologia/Rotina anual": 53,
-      "TTO 1 vez": 39,
-      "Rotina pós parto": 18,
-      "Exame": 17,
-      "Rotina 1 vez": 12,
-      "TTO Retorno": 11,
-      "Rotina Retorno": 11,
-      "TTO": 7,
-      "Pré natal 1 vez": 4,
-      "Retorno pós parto": 2
-    },
-    "2026-03": {
-      "Pré natal": 89,
-      "Ginecologia/Rotina anual": 14,
-      "TTO 1 vez": 10,
-      "Exame": 6,
-      "Rotina Retorno": 5,
-      "Rotina 1 vez": 4,
-      "TTO Retorno": 4,
-      "Rotina pós parto": 3,
-      "TTO": 2,
-      "Pré natal 1 vez": 2
-    },
-    "2026-04": {
-      "Pré natal": 68,
-      "TTO 1 vez": 10,
-      "Ginecologia/Rotina anual": 7,
-      "Exame": 3,
-      "Rotina 1 vez": 3,
-      "Rotina Retorno": 2,
-      "TTO Retorno": 2,
-      "Rotina pós parto": 2,
-      "Retorno pós parto": 2
-    },
-    "2026-05": {
-      "Pré natal": 70,
-      "Ginecologia/Rotina anual": 16,
-      "TTO 1 vez": 14,
-      "Rotina pós parto": 10,
-      "Exame": 4,
-      "TTO Retorno": 3,
-      "Rotina 1 vez": 3,
-      "Pré natal 1 vez": 2,
-      "Rotina Retorno": 2,
-      "TTO": 2
-    },
-    "2026-06": {
-      "Pré natal": 29,
-      "Ginecologia/Rotina anual": 16,
-      "TTO 1 vez": 5,
-      "Exame": 4,
-      "Rotina pós parto": 3,
-      "TTO": 3,
-      "TTO Retorno": 2,
-      "Rotina Retorno": 2,
-      "Rotina 1 vez": 2
-    }
-  },
-  "consultorioSemana": {
-    "todos": [
-      {
-        "semana": "02/03–08/03",
-        "qtd": 29
-      },
-      {
-        "semana": "09/03–15/03",
-        "qtd": 36
-      },
-      {
-        "semana": "16/03–22/03",
-        "qtd": 29
-      },
-      {
-        "semana": "23/03–29/03",
-        "qtd": 24
-      },
-      {
-        "semana": "30/03–05/04",
-        "qtd": 21
-      },
-      {
-        "semana": "06/04–12/04",
-        "qtd": 31
-      },
-      {
-        "semana": "13/04–19/04",
-        "qtd": 23
-      },
-      {
-        "semana": "20/04–26/04",
-        "qtd": 22
-      },
-      {
-        "semana": "27/04–03/05",
-        "qtd": 23
-      },
-      {
-        "semana": "04/05–10/05",
-        "qtd": 28
-      },
-      {
-        "semana": "11/05–17/05",
-        "qtd": 34
-      },
-      {
-        "semana": "18/05–24/05",
-        "qtd": 33
-      },
-      {
-        "semana": "25/05–31/05",
-        "qtd": 31
-      },
-      {
-        "semana": "01/06–07/06",
-        "qtd": 20
-      },
-      {
-        "semana": "08/06–14/06",
-        "qtd": 30
-      },
-      {
-        "semana": "15/06–21/06",
-        "qtd": 16
-      }
-    ],
-    "2026-03": [
-      {
-        "semana": "02/03–08/03",
-        "qtd": 29
-      },
-      {
-        "semana": "09/03–15/03",
-        "qtd": 36
-      },
-      {
-        "semana": "16/03–22/03",
-        "qtd": 29
-      },
-      {
-        "semana": "23/03–29/03",
-        "qtd": 24
-      },
-      {
-        "semana": "30/03–05/04",
-        "qtd": 21
-      }
-    ],
-    "2026-04": [
-      {
-        "semana": "06/04–12/04",
-        "qtd": 31
-      },
-      {
-        "semana": "13/04–19/04",
-        "qtd": 23
-      },
-      {
-        "semana": "20/04–26/04",
-        "qtd": 22
-      },
-      {
-        "semana": "27/04–03/05",
-        "qtd": 23
-      }
-    ],
-    "2026-05": [
-      {
-        "semana": "04/05–10/05",
-        "qtd": 28
-      },
-      {
-        "semana": "11/05–17/05",
-        "qtd": 34
-      },
-      {
-        "semana": "18/05–24/05",
-        "qtd": 33
-      },
-      {
-        "semana": "25/05–31/05",
-        "qtd": 31
-      }
-    ],
-    "2026-06": [
-      {
-        "semana": "01/06–07/06",
-        "qtd": 20
-      },
-      {
-        "semana": "08/06–14/06",
-        "qtd": 30
-      },
-      {
-        "semana": "15/06–21/06",
-        "qtd": 16
-      }
-    ]
-  }
+  ]
 }
