@@ -114,7 +114,10 @@ html[data-theme="light"] .moon{display:none}
 .ctab .tot td{font-weight:700;border-top:2px solid var(--border);color:var(--primary)}
 .bar-cell{position:relative}
 .bar-bg{position:absolute;left:0;top:0;bottom:0;background:var(--primary-a);border-radius:4px;z-index:0}
-.bar-cell span{position:relative;z-index:1}
+.bar-cell span{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px}
+.swatch{width:10px;height:10px;border-radius:3px;flex-shrink:0;display:inline-block;
+  box-shadow:0 0 0 1px rgba(0,0,0,.10) inset}
+html[data-theme="dark"] .swatch{box-shadow:0 0 0 1px rgba(255,255,255,.18) inset}
 
 .plist{display:flex;flex-direction:column;gap:8px}
 .pcard{border:1px solid var(--border);border-radius:8px;padding:11px 13px;background:var(--card2)}
@@ -239,6 +242,33 @@ const charts = {};
 const PAD = { light:{grid:'#e8ecf2',tick:'#6b7a99'}, dark:{grid:'#1e2842',tick:'#8b9ab8'} };
 const PAL = ['#1E6BFF','#059669','#d97706','#7c3aed','#dc2626','#0891b2','#db2777','#65a30d','#9aa3b8'];
 
+/* ---- Paleta fixa por categoria (edite aqui para trocar as cores) ---- */
+const CORES = {
+  // finalidade da consulta / finalidade das perdas
+  'fertilidade':'#ffcfc9', 'contracepcao':'#bfe1f6', 'prenatal':'#e6cff2', 'semdados':'#e8eaed',
+  // forma de pagamento
+  'pix':'#11734b', 'link':'#0a53a8',
+  // status do tratamento
+  'emaberto':'#bfe1f6', 'atencao':'#ffe5a0', 'ganho':'#d4edbc', 'perdido':'#ffcfc9'
+};
+const chave = s => String(s??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+                    .toLowerCase().replace(/[^a-z0-9]/g,'');
+const corDe = (k, i=0) => CORES[chave(k)] || PAL[i % PAL.length];
+
+/* Luminância -> define quanto da cor aplicar como fundo da barra, para o texto
+   continuar legível nos dois temas (pastéis claros e cores escuras). */
+function lum(hex){
+  const n = parseInt(hex.slice(1),16);
+  const f = c => { c/=255; return c<=.03928 ? c/12.92 : Math.pow((c+.055)/1.055,2.4); };
+  return .2126*f(n>>16&255) + .7152*f(n>>8&255) + .0722*f(n&255);
+}
+function tint(hex){
+  const L = lum(hex), dark = theme()==='dark';
+  const a = dark ? (L > .6 ? .30 : .55) : (L > .6 ? .90 : .26);
+  const n = parseInt(hex.slice(1),16);
+  return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`;
+}
+
 const brl = v => 'R$ ' + (v||0).toLocaleString('pt-BR',{minimumFractionDigits:0,maximumFractionDigits:0});
 const brlF = v => 'R$ ' + (v||0).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
 const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -310,9 +340,11 @@ function tabelaRank(obj, colLabel, totalLabel, fmt){
   if(!ent.length) return vazio('Sem dados para o período selecionado.');
   const t = ent.reduce((a,[,v])=>a+v,0), mx = ent[0][1];
   return `<table class="ctab"><thead><tr><th>${colLabel}</th><th class="num">Qtd</th><th class="num">%</th></tr></thead><tbody>
-    ${ent.map(([k,v])=>`<tr><td class="bar-cell"><div class="bar-bg" style="width:${(v/mx*100).toFixed(1)}%"></div><span>${esc(k)}</span></td>
-      <td class="num">${fmt?fmt(v):v}</td><td class="num" style="color:var(--muted)">${(v/t*100).toFixed(1)}%</td></tr>`).join('')}
-    <tr class="tot"><td>${totalLabel}</td><td class="num">${fmt?fmt(t):t}</td><td class="num">100%</td></tr></tbody></table>`;
+    ${ent.map(([k,v],i)=>{ const cor = corDe(k,i); return `<tr>
+      <td class="bar-cell"><div class="bar-bg" style="width:${(v/mx*100).toFixed(1)}%;background:${tint(cor)}"></div>
+        <span><i class="swatch" style="background:${cor}"></i>${esc(k)}</span></td>
+      <td class="num">${fmt?fmt(v):v}</td><td class="num" style="color:var(--muted)">${(v/t*100).toFixed(1)}%</td></tr>`;}).join('')}
+    <tr class="tot"><td style="padding-left:12px">${totalLabel}</td><td class="num">${fmt?fmt(t):t}</td><td class="num">100%</td></tr></tbody></table>`;
 }
 
 /* =============== CHARTS =============== */
@@ -330,11 +362,11 @@ function baseScales(money){
            y:{beginAtZero:true,grid:{color:p.grid,drawBorder:false},
               ticks:{font:{size:10},precision:0,callback:v=>money?brl(v):v}} };
 }
-function donut(id, obj){
+function donut(id, obj, usarPaleta){
   const ent = Object.entries(obj||{}).sort((a,b)=>b[1]-a[1]);
   mkChart(id,{type:'doughnut',
     data:{labels:ent.map(e=>e[0]),datasets:[{data:ent.map(e=>e[1]),
-      backgroundColor:PAL.slice(0,ent.length),borderWidth:2,
+      backgroundColor: usarPaleta ? ent.map((e,i)=>corDe(e[0],i)) : PAL.slice(0,ent.length),borderWidth:2,
       borderColor:getComputedStyle(document.body).getPropertyValue('--card')}]},
     options:{responsive:true,maintainAspectRatio:false,cutout:'62%',
       plugins:{legend:{position:'right',labels:{boxWidth:9,boxHeight:9,font:{size:11},padding:11,usePointStyle:true,pointStyle:'circle'}},
@@ -531,12 +563,13 @@ function render(){
   if(S.tab==='consultas'){
     barras('c-sem', semL, sem.map(x=>x.qtd), '#1E6BFF', false);
     const ff = c.faturamentoPorFinalidade||{};
-    barras('c-fatfin', Object.keys(ff), Object.values(ff), '#059669', true);
+    barras('c-fatfin', Object.keys(ff), Object.values(ff),
+           Object.keys(ff).map((k,i)=>corDe(k,i)), true);
     if(sum(c.origem)) donut('c-org', c.origem);
     if(sum(c.perfil)) donut('c-perf', c.perfil);
   }
   if(S.tab==='tratamento'){
-    donut('t-st', tr.status);
+    donut('t-st', tr.status, true);
     document.querySelectorAll('[data-pf]').forEach(b => b.onclick = () => { S.procFilter = b.dataset.pf; render(); });
   }
   if(S.tab==='perdas'){
